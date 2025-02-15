@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdb7687848edfed4da77f4f445b2bf23, type: 3}
+  m_Name: FrostLineSkill
+  m_EditorClassIdentifier: 
+  skillName: "\u51B0\u55B7\uFF0C4\u683C\u8FDC"
+  releaseType: 0
+  releaseRange: 0
+  effectAreaType: 0
+  areaData: {fileID: 11400000, guid: 6d2b5f5f5e9d21148bf334bc95371286, type: 2}
+  targetType: 0
+  powerValue: 10
+  effectCellColor: {r: 1, g: 0, b: 0, a: 1}
