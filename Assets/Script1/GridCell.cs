@@ -52,7 +52,7 @@ public class GridCell : MonoBehaviour
 
         // 不可通行时始终显示红色
         if (!isPassable)
-            spriteRenderer.color = Color.red;
+            spriteRenderer.color = new Color(1f, 0f, 0f, 0f);
         else
         {
             // 如果临时覆盖颜色开启，则使用，否则用白色
