@@ -6,8 +6,8 @@ public abstract class BaseCharacter : MonoBehaviour
 {
     [Header("基础属性")]
     [Tooltip("血量")]
-    public int health = 100;
-    public int currentHealth = 100;
+    public float health = 100;
+    public float currentHealth = 100;
     [Tooltip("攻击力")]
     public int attack = 10;
     [Tooltip("移动范围（单位：格子数）")]
@@ -51,14 +51,23 @@ public abstract class BaseCharacter : MonoBehaviour
     public GameObject damageTextPrefab;
     public Canvas uiCanvas;
 
+    [Header("血条预制体")]
+    public GameObject healthBarPrefab;
+    [Tooltip("血条在他身上的y轴坐标")]
+    public float healthBarPosY = 2.0f;
+
     /// <summary>
     /// 游戏开始时将角色吸附到离其最近的格子中心
     /// </summary>
     protected virtual void Start()
     {
-        // 如果策划在 Scene 中直接拖放了角色 prefab，但未手动指定所属格子，则自动寻找最近的格子
+        // 如果在 Scene 中直接拖放了角色 prefab，但未手动指定所属格子，则自动寻找最近的格子
         if (currentCell == null)
             SnapToNearestGridCell();
+        // 初始化一个血条
+        HealthBarUI healthBar = Instantiate(healthBarPrefab).GetComponent<HealthBarUI>();
+        healthBar.SetTarget(this.gameObject);
+
     }
 
     /// <summary>
