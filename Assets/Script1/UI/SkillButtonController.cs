@@ -69,7 +69,7 @@ public class SkillButtonController : MonoBehaviour, IPointerEnterHandler, IPoint
             RectTransform tooltipRect = tooltipInstance.GetComponent<RectTransform>();
             // 计算偏移：这里以 tooltip 的宽度为偏移（向左偏移）
             Vector3 eventPos = new Vector3(eventData.position.x, eventData.position.y, 0);
-            Vector3 offset = new Vector3(-tooltipRect.rect.width, 0, 0);
+            Vector3 offset = new Vector3(0, 40, 0);
             tooltipInstance.transform.position = eventPos + offset;
         }
     }

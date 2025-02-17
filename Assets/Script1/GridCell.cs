@@ -27,6 +27,8 @@ public class GridCell : MonoBehaviour
     [Tooltip("当前占用者（玩家或敌人），为空时表示无人占用")]
     public BaseCharacter occupant;
 
+    private bool ifOutline = false;
+
     // 临时颜色覆盖（用于技能高亮）
     [HideInInspector] public bool useTempColorOverride = false;
     [HideInInspector] public Color tempColorOverride = Color.white;
@@ -42,15 +44,33 @@ public class GridCell : MonoBehaviour
         RefreshVisual();
     }
 
+    private void Update()
+    {
+        if (occupant != null && ifOutline == true)
+        {
+            if (cellState != GridCellState.SkillRange)
+            {
+                Outline outLine = occupant.GetComponentInChildren<Outline>();
+                if (outLine != null)
+                {
+                    outLine.enabled = false;
+                    ifOutline = false;
+                }
+            }
+        }
+        
+    }
+
     /// <summary>
     /// 刷新格子的视觉显示（根据是否可通行以及状态设置 Sprite 和颜色）
     /// </summary>
     public void RefreshVisual()
     {
+        
         if (spriteRenderer == null)
             spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // 不可通行时始终显示红色
+        // 不可通行时始终显示透明色
         if (!isPassable)
             spriteRenderer.color = new Color(1f, 0f, 0f, 0f);
         else
@@ -68,6 +88,23 @@ public class GridCell : MonoBehaviour
             Sprite newSprite = parentMap.GetSpriteForState(cellState);
             if (newSprite != null)
                 spriteRenderer.sprite = newSprite;
+
+            //如果格子上有东西，就试一下要不要打开outline
+            if(occupant != null)
+            {
+                Outline outLine = occupant.GetComponentInChildren<Outline>();
+                //让格子上的敌人显示红色描边。如果outline已经打开了，就不管。
+                if (cellState == GridCellState.SkillRange)
+                { 
+                    if (outLine != null)
+                    {
+                        outLine.OutlineColor = Color.red;
+                        outLine.enabled = true;
+                        ifOutline = true;
+                    }
+                }
+                
+            }
         }
     }
 

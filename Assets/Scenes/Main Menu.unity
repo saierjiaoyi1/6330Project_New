@@ -669,12 +669,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseInputEnabled: 1
   levels:
-  - levelName: Test Level
-    description: This is a test level.
-    sceneName: TestLevel
   - levelName: Test Level2
     description: This is a test level2.
     sceneName: SampleScene
+  - levelName: Test Level
+    description: This is a test level.
+    sceneName: TestLevel
   SelectedLevelIndex: -1
 --- !u!4 &1564494382
 Transform:

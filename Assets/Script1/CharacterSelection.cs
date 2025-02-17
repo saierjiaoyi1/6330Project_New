@@ -36,10 +36,12 @@ public class CharacterSelection : MonoBehaviour
     {
         isMouseOver = true;
 
+        Outline outLine = GetComponent<Outline>();
         // 启用描边效果
-        if (GetComponent<Outline>() != null)
+        if (outLine != null)
         {
-            GetComponent<Outline>().enabled = true;
+            outLine.enabled = true;
+            outLine.OutlineColor = Color.white;
         }
 
         // 实例化UI预制体（如果还没有的话）

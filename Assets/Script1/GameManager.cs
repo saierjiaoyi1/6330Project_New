@@ -22,12 +22,14 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        
         if (Instance != null && Instance != this)
         {
             Destroy(this.gameObject);
             return;
         }
+
+        Instance = this;
 
         DontDestroyOnLoad(this.gameObject);
     }
@@ -81,5 +83,17 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("已经是最后一关或未设置关卡！");
         }
+    }
+
+    //重新开始这一关
+    public void Restart()
+    {
+        LoadScene(levels[SelectedLevelIndex].sceneName);
+    }
+
+    //回到主菜单
+    public void ComeBack()
+    {
+        LoadScene("Main Menu");
     }
 }
