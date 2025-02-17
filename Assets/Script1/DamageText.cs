@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DamageText : MonoBehaviour
 {
     [Header("UI组件")]
-    // 显示伤害数字的 Text 组件（如果你使用 TextMeshPro，请替换成对应组件）
+    // 显示伤害数字的 Text 组件
     public Text damageText;
 
     // 内部变量：浮动速度和显示持续时间（可通过 Init 设置）

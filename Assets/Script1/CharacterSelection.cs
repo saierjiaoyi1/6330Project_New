@@ -3,9 +3,6 @@ using UnityEngine.UI;
 
 public class CharacterSelection : MonoBehaviour
 {
-    [Header("描边物体（预制体下的子物体），鼠标悬停时激活")]
-    public GameObject outlineObj;
-
     [Header("显示角色信息的UI预制体，必须放在Canvas下（Screen Space - Overlay）")]
     public GameObject uiPrefab;
 
@@ -27,12 +24,11 @@ public class CharacterSelection : MonoBehaviour
         {
             baseCharacter = transform.parent.GetComponent<BaseCharacter>();
         }
-
-        // 确保描边对象初始为关闭状态
-        if (outlineObj != null)
+        if (GetComponent<Outline>() != null)
         {
-            outlineObj.SetActive(false);
+            GetComponent<Outline>().enabled = false;
         }
+
     }
 
     // 当鼠标进入本物体碰撞器范围
@@ -41,9 +37,9 @@ public class CharacterSelection : MonoBehaviour
         isMouseOver = true;
 
         // 启用描边效果
-        if (outlineObj != null)
+        if (GetComponent<Outline>() != null)
         {
-            outlineObj.SetActive(true);
+            GetComponent<Outline>().enabled = true;
         }
 
         // 实例化UI预制体（如果还没有的话）
@@ -61,10 +57,9 @@ public class CharacterSelection : MonoBehaviour
     {
         isMouseOver = false;
 
-        // 关闭描边效果
-        if (outlineObj != null)
+        if (GetComponent<Outline>() != null)
         {
-            outlineObj.SetActive(false);
+            GetComponent<Outline>().enabled = false;
         }
 
         // 销毁UI实例

@@ -328,8 +328,8 @@ public abstract class BaseCharacter : MonoBehaviour
         {
             currentHealth = 0;
             //死亡
-        }
-            
+            Die();
+        } 
 
         // 显示伤害数字（你可以改为实例化浮动文本 prefab 等）
         ShowDamageText(effectiveDamage, damageColor);
@@ -350,5 +350,10 @@ public abstract class BaseCharacter : MonoBehaviour
         DamageText fd = go.GetComponent<DamageText>();
         // 用角色当前的世界坐标作为数字显示的起点
         fd.Init(damage, color, transform.position, 100, 1);
+    }
+
+    protected virtual void Die()
+    {
+        //实现角色死亡方法
     }
 }

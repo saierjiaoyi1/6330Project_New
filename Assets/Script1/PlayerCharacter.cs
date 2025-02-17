@@ -95,4 +95,9 @@ public class PlayerCharacter : BaseCharacter
         Debug.Log("玩家选择跳过回合。");
         EndTurn();
     }
+
+    protected override void Die()
+    {
+        base.Die();
+    }
 }
