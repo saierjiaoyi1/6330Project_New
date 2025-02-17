@@ -6,7 +6,6 @@ public class EnemyCharacter : BaseCharacter
     public override void OnTurnStart()
     {
         base.OnTurnStart();
-        Debug.Log("敌人回合开始。");
 
         // 敌人简单逻辑：寻找最近的玩家，并向其靠近
         PlayerCharacter target = FindNearestPlayer();

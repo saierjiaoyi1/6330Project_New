@@ -19,31 +19,40 @@ public class FireballSkillSO : SkillSO
         // 播放动画（此处用等待模拟动画播放时间）
         yield return new WaitForSeconds(1f);
         // 在动画达到特定节点时，结算技能效果
+
+        List<BaseCharacter> validTargets = new List<BaseCharacter>();
         foreach (SkillTargetInfo targetInfo in targets)
         {
             if (targetInfo.cell != null && targetInfo.cell.occupant != null)
             {
-                bool validTarget = false;
+                BaseCharacter target = targetInfo.cell.occupant;
+                bool isValid = false;
                 switch (targetType)
                 {
                     case SkillTargetType.Enemies:
-                        validTarget = targetInfo.cell.occupant.team != caster.team;
+                        isValid = (target.team != caster.team);
                         break;
                     case SkillTargetType.Allies:
-                        validTarget = targetInfo.cell.occupant.team == caster.team;
+                        isValid = (target.team == caster.team);
                         break;
                     case SkillTargetType.All:
-                        validTarget = true;
+                        isValid = true;
                         break;
                 }
-                if (validTarget)
+
+                // 如果是有效目标且还未添加进列表，则添加
+                if (isValid && !validTargets.Contains(target))
                 {
-                    Debug.Log($"{skillName} 对 {targetInfo.cell.occupant.name} 造成 {powerValue} 点伤害 (featureCode: {targetInfo.featureCode})");
-                    //targetInfo.cell.occupant.health -= powerValue;
-                    targetInfo.cell.occupant.ReceiveDamage(10, DamageType.Fire);
-                    // 此处可以根据 targetInfo.featureCode 施加不同效果
+                    validTargets.Add(target);
                 }
             }
+        }
+
+        // 依次对缓存的目标施加伤害
+        foreach (BaseCharacter target in validTargets)
+        {
+            Debug.Log($"{skillName} 对 {target.name} 造成 {powerValue} 点伤害");
+            target.ReceiveDamage(powerValue, DamageType.Fire);
         }
         // 等待动画结束
         yield return new WaitForSeconds(0.5f);

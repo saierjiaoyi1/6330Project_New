@@ -59,15 +59,19 @@ public abstract class BaseCharacter : MonoBehaviour
     /// <summary>
     /// 游戏开始时将角色吸附到离其最近的格子中心
     /// </summary>
+    protected virtual void Awake()
+    {
+        
+    }
     protected virtual void Start()
     {
+
         // 如果在 Scene 中直接拖放了角色 prefab，但未手动指定所属格子，则自动寻找最近的格子
         if (currentCell == null)
             SnapToNearestGridCell();
         // 初始化一个血条
         HealthBarUI healthBar = Instantiate(healthBarPrefab).GetComponent<HealthBarUI>();
         healthBar.SetTarget(this.gameObject);
-
     }
 
     /// <summary>
@@ -324,7 +328,9 @@ public abstract class BaseCharacter : MonoBehaviour
         int effectiveDamage = Mathf.RoundToInt(rawDamage * (100 - resistance)/100);
         // 扣除血量
         currentHealth -= effectiveDamage;
-        if (currentHealth < 0)
+        Debug.Log($"{name} 受到了 {effectiveDamage} 点 {damageType} 伤害，剩余血量：{health}");
+
+        if (currentHealth <= 0)
         {
             currentHealth = 0;
             //死亡
@@ -335,7 +341,7 @@ public abstract class BaseCharacter : MonoBehaviour
         ShowDamageText(effectiveDamage, damageColor);
 
         // 可添加其它逻辑，比如播放受击动画、检查是否死亡、触发事件等
-        Debug.Log($"{name} 受到了 {effectiveDamage} 点 {damageType} 伤害，剩余血量：{health}");
+
     }
 
     /// <summary>
@@ -352,8 +358,11 @@ public abstract class BaseCharacter : MonoBehaviour
         fd.Init(damage, color, transform.position, 100, 1);
     }
 
-    protected virtual void Die()
+    protected void Die()
     {
         //实现角色死亡方法
+        Debug.Log(this.gameObject + "死掉了");
+        TurnBasedManager.Instance.RemoveCharacter(this);
+        Destroy(this.gameObject);
     }
 }

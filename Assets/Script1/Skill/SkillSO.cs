@@ -1,10 +1,17 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public abstract class SkillSO : ScriptableObject
 {
     [Header("基本配置")]
     public string skillName;
+    public string skillType;
+    public string description;
+    public Sprite skillIcon;
+    public Sprite range;
+
+    [Header("逻辑配置")]
     public SkillReleaseType releaseType;
     [Tooltip("当 releaseType 不为 SelfCentered 时，表示释放中心可选取的最大距离")]
     public int releaseRange;

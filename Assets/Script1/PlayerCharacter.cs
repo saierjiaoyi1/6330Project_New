@@ -10,6 +10,7 @@ public class PlayerCharacter : BaseCharacter
         Debug.Log("玩家回合开始，请选择移动的格子或点击跳过回合。");
         // 此处可以调用 UI 系统激活玩家输入逻辑
         GameManager.Instance.mouseInputEnabled = true;
+        SkillUIManager.Instance.ShowSkillsForPlayer(this);
     }
 
     private void Update()
@@ -94,10 +95,5 @@ public class PlayerCharacter : BaseCharacter
     {
         Debug.Log("玩家选择跳过回合。");
         EndTurn();
-    }
-
-    protected override void Die()
-    {
-        base.Die();
     }
 }

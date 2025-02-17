@@ -35,6 +35,11 @@ public class HealthBarUI : MonoBehaviour
 
     void Update()
     {
+        if(target == null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
         // 将目标位置加上偏移转换为屏幕坐标，保证血条始终悬浮在角色上方
         Vector3 worldPos = target.position + worldOffset;
         Vector3 screenPos = mainCam.WorldToScreenPoint(worldPos);

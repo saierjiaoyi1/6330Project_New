@@ -686,7 +686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonContainer: {fileID: 2038704378}
-  levelButtonPrefab: {fileID: 2683093055642929012, guid: 8b03aa0192b3f60448e421175bc7af94, type: 3}
+  levelButtonPrefab: {fileID: 6096132322447729312, guid: b694d00c054a11940b78aede3570a000, type: 3}
   playButton: {fileID: 2053571321}
 --- !u!114 &2038704380
 MonoBehaviour:
@@ -708,8 +708,8 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 400, y: 150}
-  m_Spacing: {x: 207.05, y: 59.59}
+  m_CellSize: {x: 369.2, y: 125.82}
+  m_Spacing: {x: 44.4, y: 59.59}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &2038704381

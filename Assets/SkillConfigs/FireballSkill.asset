@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00e3d15852851574298cde4e4711b601, type: 3}
   m_Name: FireballSkill
   m_EditorClassIdentifier: 
-  skillName: "\u706B\u7403\u672F\uFF0C\u8FD1\u8DDD\u79BB4\u683C"
+  skillName: Fire?
+  skillType: Fire
+  description: Short range fire.
+  skillIcon: {fileID: 21300000, guid: 132c9301f847a4349a8088c3b5a41b10, type: 3}
+  range: {fileID: 21300000, guid: 10fec5b0c63b3064ba817f967b02e70c, type: 3}
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0

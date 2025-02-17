@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdb7687848edfed4da77f4f445b2bf23, type: 3}
   m_Name: FrostLineSkill
   m_EditorClassIdentifier: 
-  skillName: "\u51B0\u55B7\uFF0C4\u683C\u8FDC"
+  skillName: Frost
+  skillType: Frost
+  description: 123123
+  skillIcon: {fileID: 21300000, guid: 9dcba26642ef1bd47b8220224d551dc7, type: 3}
+  range: {fileID: 21300000, guid: 0e9441e9d511fa54f9e6ad6244bd556a, type: 3}
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0

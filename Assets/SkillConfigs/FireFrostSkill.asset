@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c174fd3965ed8a439fa645712fbb448, type: 3}
   m_Name: FireFrostSkill
   m_EditorClassIdentifier: 
-  skillName: "\u51B0\u706B\u55B7"
+  skillName: Fire and Frost
+  skillType: Fire, Frost
+  description: 123123
+  skillIcon: {fileID: 21300000, guid: 97c7c0a5487dbb444ae7b29916bbc409, type: 3}
+  range: {fileID: 21300000, guid: 857c06ae2f6ebdd46a3a76d8a0d18d61, type: 3}
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0
