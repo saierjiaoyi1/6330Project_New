@@ -4,6 +4,8 @@ using UnityEngine.EventSystems;
 
 public class PlayerCharacter : BaseCharacter
 {
+    [Header("显示在屏幕左下角的立绘图像")]
+    public Sprite img;
     public override void OnTurnStart()
     {
         base.OnTurnStart();
@@ -11,6 +13,7 @@ public class PlayerCharacter : BaseCharacter
         // 此处可以调用 UI 系统激活玩家输入逻辑
         GameManager.Instance.mouseInputEnabled = true;
         SkillUIManager.Instance.ShowSkillsForPlayer(this);
+        UIController.Instance.SwitchCharacterImg(img);
     }
 
     private void Update()
