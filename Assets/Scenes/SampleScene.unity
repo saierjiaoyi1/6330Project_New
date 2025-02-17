@@ -9585,6 +9585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ccd7c1b9ebf734baa010f5476c3bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: "\u602A\u7269"
   health: 800
   currentHealth: 5
   attack: 10
@@ -33691,6 +33692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ccd7c1b9ebf734baa010f5476c3bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: "\u602A\u7269\u54C7\u54C7"
   health: 800
   currentHealth: 5
   attack: 10
@@ -37420,6 +37422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 434d163daceadf24d977e7d45efbfcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: 
   health: 100
   currentHealth: 100
   attack: 10
@@ -40042,6 +40045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ccd7c1b9ebf734baa010f5476c3bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: "\u602A\u7269\u5440\u5440"
   health: 800
   currentHealth: 5
   attack: 10
@@ -50096,6 +50100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ccd7c1b9ebf734baa010f5476c3bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: "\u602A\u7269\u554A\u554A"
   health: 800
   currentHealth: 5
   attack: 10

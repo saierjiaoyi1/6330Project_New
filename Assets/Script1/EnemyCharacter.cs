@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class EnemyCharacter : BaseCharacter
 {
+    
     public override void OnTurnStart()
     {
         base.OnTurnStart();

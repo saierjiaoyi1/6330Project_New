@@ -4,6 +4,8 @@ using System.Collections;
 
 public abstract class BaseCharacter : MonoBehaviour
 {
+    [Header("名字")]
+    public string Name;
     [Header("基础属性")]
     [Tooltip("血量")]
     public float health = 100;

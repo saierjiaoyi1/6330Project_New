@@ -91,32 +91,37 @@ public class CharacterSelection : MonoBehaviour
     {
         if (baseCharacter != null && uiInstance != null)
         {
-            // 假设UI预制体中有三个子Text对象，名称分别为 "HPText"、"AttackText"、"DefenseText"
+            // 获取预制体下面的文本框
+            Text nameText = uiInstance.transform.Find("Name").GetComponent<Text>();
             Text hpText = uiInstance.transform.Find("HP").GetComponent<Text>();
             Text FireText = uiInstance.transform.Find("Fire").GetComponent<Text>();
             Text FrostText = uiInstance.transform.Find("Frost").GetComponent<Text>();
             Text CutText = uiInstance.transform.Find("Cut").GetComponent<Text>();
             Text BluntText = uiInstance.transform.Find("Blunt").GetComponent<Text>();
 
+            if (nameText != null)
+            {
+                nameText.text = baseCharacter.Name;
+            }
             if (hpText != null)
             {
                 hpText.text = "HP: " + baseCharacter.currentHealth;
             }
             if (FireText != null)
             {
-                FireText.text = "Fire resistance: " + baseCharacter.fireResistance;
+                FireText.text = "Fire Res: " + baseCharacter.fireResistance;
             }
             if (FrostText != null)
             {
-                FrostText.text = "Frost resistance: " + baseCharacter.iceResistance;
+                FrostText.text = "Frost Res: " + baseCharacter.iceResistance;
             }
             if (CutText != null)
             {
-                CutText.text = "Cut resistance: " + baseCharacter.CutResistance;
+                CutText.text = "Cut Res: " + baseCharacter.CutResistance;
             }
             if (BluntText != null)
             {
-                BluntText.text = "Blunt resistance: " + baseCharacter.BluntResistance;
+                BluntText.text = "Blunt Res: " + baseCharacter.BluntResistance;
             }
         }
     }
