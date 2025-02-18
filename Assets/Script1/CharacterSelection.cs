@@ -125,4 +125,9 @@ public class CharacterSelection : MonoBehaviour
             }
         }
     }
+
+    private void OnDisable()
+    {
+        Destroy(uiInstance);
+    }
 }

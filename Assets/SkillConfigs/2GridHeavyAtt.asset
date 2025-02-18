@@ -16,8 +16,8 @@ MonoBehaviour:
   skillType: Blunt
   description: Bash the shield tray in one direction, dealing blunt damage in a 1x2
     area in the chosen direction.
-  skillIcon: {fileID: 0}
-  range: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 07fa104aaf0296a428a04bcd00159620, type: 3}
+  range: {fileID: 21300000, guid: 5a16a4c21d175f14d923c66ce772f1e8, type: 3}
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0

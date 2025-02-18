@@ -31,4 +31,5 @@ public class TooltipUI : MonoBehaviour
         if (rangeImage != null)
             rangeImage.sprite = rangeSprite;
     }
+
 }

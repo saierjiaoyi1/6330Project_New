@@ -73,4 +73,8 @@ public class SkillButtonController : MonoBehaviour, IPointerEnterHandler, IPoint
             tooltipInstance.transform.position = eventPos + offset;
         }
     }
+    private void OnDisable()
+    {
+        Destroy(tooltipInstance);
+    }
 }

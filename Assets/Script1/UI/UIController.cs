@@ -63,6 +63,9 @@ public class UIController : MonoBehaviour
 
     public void CharacterEndTurn()
     {
-        TurnBasedManager.Instance.turnOrder[TurnBasedManager.Instance.currentTurnIndex].EndTurn();
+        BaseCharacter currentCharacter = TurnBasedManager.Instance.turnOrder[TurnBasedManager.Instance.currentTurnIndex];
+        if (currentCharacter.team != Team.Player) return;
+        if (currentCharacter.currentState != CharacterState.Waiting) return;
+        currentCharacter.EndTurn();
     }
 }

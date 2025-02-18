@@ -1,11 +1,13 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using System;
 
 public class TurnBasedManager : MonoBehaviour
 {
     public static TurnBasedManager Instance;
     public CameraController cameraController;
+
 
     /// <summary>
     /// 记录回合顺序的角色列表
@@ -60,6 +62,7 @@ public class TurnBasedManager : MonoBehaviour
     /// </summary>
     public void NextTurn()
     {
+
         if (gameOver) return;
         currentTurnIndex = (currentTurnIndex + 1) % turnOrder.Count;
 

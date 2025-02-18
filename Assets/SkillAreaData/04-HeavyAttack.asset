@@ -15,5 +15,5 @@ MonoBehaviour:
   description: "\u9762\u524D1\u4E2A\u683C\u7684Blunt\u7C7B\u578B\u7684\u653B\u51FB"
   cellDataList:
   - offset: {x: 0, y: 1}
-    cellColor: {r: 0.348, g: 0.348, b: 0.348, a: 1}
+    cellColor: {r: 1, g: 0.54828495, b: 0.33490568, a: 1}
     featureCode: 0
