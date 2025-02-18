@@ -530,7 +530,12 @@ MonoBehaviour:
   - levelName: Test Level2
     description: 
     sceneName: SampleLevel2
+  - levelName: SampleScene
+    description: 
+    sceneName: SampleScene
   SelectedLevelIndex: -1
+  dice1: {fileID: 0}
+  dice2: {fileID: 0}
 --- !u!4 &1564494382
 Transform:
   m_ObjectHideFlags: 0
@@ -801,7 +806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelSelectButton: {fileID: 2028159416}
-  quitButton: {fileID: 0}
+  quitButton: {fileID: 1761057753}
   levelSelectionSceneName: LevelSelection
 --- !u!4 &1859828779
 Transform:
@@ -1170,8 +1175,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2008046769}
+  - {fileID: 26491677}
   - {fileID: 144403097}
   - {fileID: 1662530686}
-  - {fileID: 26491677}
   - {fileID: 1859828779}
   - {fileID: 1564494382}

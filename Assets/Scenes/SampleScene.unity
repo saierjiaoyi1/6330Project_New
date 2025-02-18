@@ -40471,6 +40471,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseUI: {fileID: 663265027}
   characterImg: {fileID: 1183126349}
+  dice1: {fileID: 2059382551}
+  dice2: {fileID: 916580493}
 --- !u!1 &1306526876
 GameObject:
   m_ObjectHideFlags: 0

@@ -102,9 +102,17 @@ public class GameManager : MonoBehaviour
         LoadScene("Main Menu");
     }
 
-    //roll骰子相关---------------------------------------------------------------
+    //roll骰子相关v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v
     public async Task<(int, int)> RollDice()
     {
+        if(dice1 == null || dice2 == null)
+        {
+            dice1 = UIController.Instance.dice1;
+            dice2 = UIController.Instance.dice2;
+        }
+        if (dice1 != null) dice1.OnRollComplete += HandleDiceRoll;
+        if (dice2 != null) dice2.OnRollComplete += HandleDiceRoll;
+
         dice1Result = null;
         dice2Result = null;
 
@@ -129,5 +137,5 @@ public class GameManager : MonoBehaviour
             await Task.Delay(100); // 每 100ms 检查一次
         }
     }
-    //roll骰子相关结束-----------------------------------------------------------
+    //roll骰子相关结束^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^
 }

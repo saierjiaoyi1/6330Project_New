@@ -7,8 +7,13 @@ public class UIController : MonoBehaviour
 {
     public static UIController Instance;
 
+    [Header("Canvas UI里面的暂停界面和左下角的characterImg拖进来")]
     public GameObject pauseUI;
     public Image characterImg;
+
+    [Header("这个场景的两个骰子拖进来")]
+    public DiceRoll dice1;
+    public DiceRoll dice2;
 
     private void Awake()
     {
