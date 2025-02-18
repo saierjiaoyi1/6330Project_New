@@ -200,7 +200,7 @@ public class PlayerSkillController : MonoBehaviour
     /// <param name="direction">
     /// 对于 SelfCentered 类型技能，可传入一个方向（四个正方向）；对其他类型技能可传 null
     /// </param>
-    private void ExecuteSkill()
+    private async void ExecuteSkill()
     {
         if (selectedSkill == null) return;
         // 对于 TargetUnitSelection，确保选中的释放中心格子内有单位
@@ -212,8 +212,13 @@ public class PlayerSkillController : MonoBehaviour
                 return;
             }
         }
+        //先roll骰子
+        isSkillSelectionActive = false;
+        var (dice1Value, dice2Value) = await GameManager.Instance.RollDice();
+        int diceValue = dice1Value + dice2Value;
+
         // 直接传入当前高亮（SkillRange）的格子列表
-        selectedSkill.Execute(player, new List<SkillTargetInfo>(currentEffectTargets));
+        selectedSkill.Execute(diceValue, player, new List<SkillTargetInfo>(currentEffectTargets));
 
         // 执行后清除所有技能高亮，并结束玩家回合
         ClearEffectRangeHighlight();

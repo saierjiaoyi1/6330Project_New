@@ -56,7 +56,7 @@ public class EnemySkillController : MonoBehaviour
         }
 
         // 启动技能动画协程，由技能自身 Execute 处理
-        selectedSkill.Execute(enemy, new List<SkillTargetInfo>(currentEffectTargets));
+        selectedSkill.Execute(6, enemy, new List<SkillTargetInfo>(currentEffectTargets));
         ClearSkillRangeHighlight();
         isSkillSelectionActive = false;
         selectedSkill = null;

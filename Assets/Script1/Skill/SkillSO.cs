@@ -40,5 +40,5 @@ public abstract class SkillSO : ScriptableObject
     /// releaseCell：策划或系统选定的释放中心所在的格子  
     /// direction：对于 Directional 类型技能，可传入一个方向（例如 Vector2Int.up 表示上方）  
     /// </summary>
-    public abstract void Execute(BaseCharacter caster, List<SkillTargetInfo> affectedTargets);
+    public abstract void Execute(int diceValue, BaseCharacter caster, List<SkillTargetInfo> affectedTargets);
 }

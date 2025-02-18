@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using System;
+using System.Threading.Tasks;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,6 +22,15 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public int SelectedLevelIndex = -1;
 
+    [Header("俩骰子")]
+    public DiceRoll dice1;
+    public DiceRoll dice2;
+
+    private int? dice1Result = null;
+    private int? dice2Result = null;
+
+    private Action<int, int> onRollCompleteCallback; // 回调函数
+
     private void Awake()
     {
         
@@ -34,17 +45,11 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
-    /*
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-    static void InitGameManager()
+    private void Start()
     {
-        if (Instance == null)
-        {
-            GameObject go = new GameObject("GameManager");
-            go.AddComponent<GameManager>();
-        }
+        if (dice1 != null) dice1.OnRollComplete += HandleDiceRoll;
+        if (dice2 != null) dice2.OnRollComplete += HandleDiceRoll;
     }
-    */
 
     /// <summary>
     /// 加载指定 scene
@@ -95,5 +100,33 @@ public class GameManager : MonoBehaviour
     public void ComeBack()
     {
         LoadScene("Main Menu");
+    }
+
+    //roll骰子
+    public async Task<(int, int)> RollDice()
+    {
+        dice1Result = null;
+        dice2Result = null;
+
+        dice1?.StartRoll();
+        dice2?.StartRoll();
+
+        // **等待两个骰子都完成**
+        await WaitForDiceResults();
+
+        return (dice1Result.Value, dice2Result.Value);
+    }
+    private void HandleDiceRoll(DiceRoll dice, int result)
+    {
+        if (dice == dice1) dice1Result = result;
+        if (dice == dice2) dice2Result = result;
+    }
+
+    private async Task WaitForDiceResults()
+    {
+        while (!dice1Result.HasValue || !dice2Result.HasValue)
+        {
+            await Task.Delay(100); // 每 100ms 检查一次
+        }
     }
 }

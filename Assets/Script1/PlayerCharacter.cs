@@ -9,7 +9,6 @@ public class PlayerCharacter : BaseCharacter
     public override void OnTurnStart()
     {
         base.OnTurnStart();
-        Debug.Log("玩家回合开始，请选择移动的格子或点击跳过回合。");
         // 此处可以调用 UI 系统激活玩家输入逻辑
         GameManager.Instance.mouseInputEnabled = true;
         SkillUIManager.Instance.ShowSkillsForPlayer(this);

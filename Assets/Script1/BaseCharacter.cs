@@ -269,9 +269,10 @@ public abstract class BaseCharacter : MonoBehaviour
     /// 回合结束时调用，清除移动范围高亮，并通知回合管理器进行下一回合
     /// </summary>
     public virtual void EndTurn()
-    {
+    {  
         currentState = CharacterState.Idle;
         ClearMovableCells();
+        Debug.Log(Name + "回合结束，当前状态：" + currentState);
         TurnBasedManager.Instance.NextTurn();
     }
 
@@ -372,11 +373,28 @@ public abstract class BaseCharacter : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    protected void PlayAttackAnim(int AnimValue)
+    public void PlayAttackAnim(int AnimValue)
     {
-        //实现角色死亡方法
-        Debug.Log(this.gameObject + "死掉了");
-        TurnBasedManager.Instance.RemoveCharacter(this);
-        Destroy(this.gameObject);
+        if (animator == null) return;
+        if(AnimValue == 1)
+        {
+            animator.SetTrigger("attackTrigger01");//360度
+        }
+        if (AnimValue == 2)
+        {
+            animator.SetTrigger("attackTrigger02");//向下挥砍
+        }
+        if (AnimValue == 3)
+        {
+            animator.SetTrigger("attackTrigger03");//先向下再向上挥砍
+        }
+        if (AnimValue == 4)
+        {
+            animator.SetTrigger("attackMagicTrigger01");//轻魔法
+        }
+        if (AnimValue == 5)
+        {
+            animator.SetTrigger("attackMagicTrigger02");//长时间施法
+        }
     }
 }

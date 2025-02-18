@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,6 +14,9 @@ public class DiceRoll : MonoBehaviour
 
     // 预设每个骰子面对应的旋转角度
     private Quaternion[] diceFaces = new Quaternion[6];
+
+    // 添加一个回调事件
+    public System.Action<DiceRoll, int> OnRollComplete;
 
     void Start()
     {
@@ -42,6 +45,9 @@ public class DiceRoll : MonoBehaviour
                 isRolling = false;
                 // 当旋转结束时，让骰子随机落在某个面上
                 SnapToFinalRotation();
+
+                // **触发回调，通知 GameManager 结果**
+                OnRollComplete?.Invoke(this, finalFaceValue);
             }
            
         }
@@ -50,6 +56,7 @@ public class DiceRoll : MonoBehaviour
     // 开始掷骰子
     public void StartRoll()
     {
+        if (isRolling) return;  // 防止重复调用
         isRolling = true;
         rollTime = 0;
         // 随机化初始旋转速度

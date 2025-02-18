@@ -55,4 +55,9 @@ public class UIController : MonoBehaviour
     {
         characterImg.sprite = img;
     }
+
+    public void CharacterEndTurn()
+    {
+        TurnBasedManager.Instance.turnOrder[TurnBasedManager.Instance.currentTurnIndex].EndTurn();
+    }
 }

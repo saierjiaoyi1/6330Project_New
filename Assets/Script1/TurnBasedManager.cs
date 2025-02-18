@@ -10,7 +10,7 @@ public class TurnBasedManager : MonoBehaviour
     /// 记录回合顺序的角色列表
     /// </summary>
     public List<BaseCharacter> turnOrder = new List<BaseCharacter>();
-    private int currentTurnIndex = 0;
+    public int currentTurnIndex = 0;
 
     // 回合计数器：每当所有角色都行动一次后加 1
     public int roundCounter = 1;
@@ -18,9 +18,6 @@ public class TurnBasedManager : MonoBehaviour
     // 绑定胜利和失败界面的UI GameObject（在 Inspector 中赋值）
     public GameObject victoryUI;
     public GameObject defeatUI;
-
-    // 新增：待移除的角色列表
-    private List<BaseCharacter> pendingRemovals = new List<BaseCharacter>();
 
     // 游戏结束标志
     private bool gameOver = false;
@@ -52,7 +49,7 @@ public class TurnBasedManager : MonoBehaviour
         if (gameOver) return;
         if (turnOrder.Count == 0) return;
         BaseCharacter currentCharacter = turnOrder[currentTurnIndex];
-        Debug.Log("当前回合角色：" + currentCharacter.name);
+        Debug.Log("当前回合角色：" + currentCharacter.Name);
         currentCharacter.OnTurnStart();
     }
 
@@ -70,8 +67,6 @@ public class TurnBasedManager : MonoBehaviour
             roundCounter++;
             Debug.Log("当前回合数：" + roundCounter);
         }
-
-        Debug.Log(turnOrder.Count + " " + currentTurnIndex);
         StartTurn();
     }
 

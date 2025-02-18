@@ -22,5 +22,6 @@ MonoBehaviour:
   effectAreaType: 0
   areaData: {fileID: 11400000, guid: 81ce9e1f141a181439a1b38942cb3d02, type: 2}
   targetType: 0
-  powerValue: 10
+  powerValue: 12
   effectCellColor: {r: 1, g: 0, b: 0, a: 1}
+  skillAnimType: 0
