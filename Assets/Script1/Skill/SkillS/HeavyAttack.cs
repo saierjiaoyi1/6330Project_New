@@ -15,7 +15,7 @@ public class HeavyAttackSkillSO : SkillSO
     private IEnumerator FireballSkillCoroutine(int diceValue, BaseCharacter caster, List<SkillTargetInfo> targets)
     {
         caster.currentState = CharacterState.Acting;
-        Debug.Log($"{skillName} 开始播放动画...");
+        Debug.Log($"{skillName} 开始播放动画..." + targets.Count);
         // 播放动画（此处用等待模拟动画播放时间）
         caster.PlayAttackAnim(2);
         yield return new WaitForSeconds(1f);

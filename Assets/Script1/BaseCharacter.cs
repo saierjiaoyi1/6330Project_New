@@ -236,7 +236,7 @@ public abstract class BaseCharacter : MonoBehaviour
     /// </summary>
     protected virtual void OnMovementComplete()
     {
-        EndTurn();
+        //EndTurn();
     }
 
     /// <summary>

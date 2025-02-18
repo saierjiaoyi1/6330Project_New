@@ -14,10 +14,6 @@ public class EnemySkillController : MonoBehaviour
     // 标记是否处于技能释放状态
     private bool isSkillSelectionActive = false;
 
-    // 缓存用于显示的释放区域和生效区域（逻辑类似玩家）
-    private List<GridCell> releaseAreaCells = new List<GridCell>();
-    private List<SkillTargetInfo> currentEffectTargets = new List<SkillTargetInfo>();
-
     void Start()
     {
         if (enemy == null)
@@ -25,29 +21,94 @@ public class EnemySkillController : MonoBehaviour
         if (gridMap == null)
             gridMap = FindObjectOfType<GridMapManager>();
 
-        // 启动 AI 选择技能（此处仅作示例，实际应根据敌人 AI 策略选择技能和释放位置）
+        
+    }
+    public void EnemyStartAttack()
+    {
+        // 启动 AI 选择技能
         StartCoroutine(SelectAndExecuteSkillByAI());
     }
 
     IEnumerator SelectAndExecuteSkillByAI()
     {
-        yield return new WaitForSeconds(1f); // 假设延时后选择技能
-        // TODO: 根据 AI 策略选择技能，此处简单选择技能列表中的第一个
+        Debug.Log("敌人开始选技能");
+        yield return new WaitForSeconds(1f); // 延时1秒后执行
+
+        // 选用技能列表中的第一个技能
         if (enemy.skillList.Count > 0)
             selectedSkill = enemy.skillList[0];
         else
             yield break;
 
-        // 进入技能释放状态
         isSkillSelectionActive = true;
-        enemy.currentState = CharacterState.Acting;  // 或新定义一个 AI 专用状态
+        enemy.currentState = CharacterState.Acting;
 
-        // TODO: 根据 AI 策略确定释放中心，下面示例直接以离最近玩家的格子为释放中心
-        GridCell releaseCell = DetermineAIReleaseCell();
-        // 高亮释放区域（可选，便于调试）
-        // 此处使用 SkillExecutor 计算生效区域（不做旋转处理，或者你也可扩展 AI 中的方向决策）
-        currentEffectTargets = SkillExecutor.GetAffectedTargets(releaseCell, selectedSkill.areaData, null);
-        foreach (SkillTargetInfo targetInfo in currentEffectTargets)
+        // 以敌人当前所在格子作为释放中心
+        GridCell releaseCell = enemy.currentCell;
+
+        // 定义四个正方向（注意：这里假定上为(0,1)，右为(1,0)，下为(0,-1)，左为(-1,0)）
+        Vector2Int[] directions = new Vector2Int[]
+        {
+            new Vector2Int(0, 1),   // 上
+            new Vector2Int(1, 0),   // 右
+            new Vector2Int(0, -1),  // 下
+            new Vector2Int(-1, 0)   // 左
+        };
+
+        // 用于记录最佳方向的数据
+        List<SkillTargetInfo> bestTargets = null;
+        Vector2Int bestDirection = Vector2Int.zero;
+        int bestHitCount = -1;
+        float bestTotalHP = int.MaxValue;
+
+        // 遍历四个方向，计算每个方向命中玩家的数量和总血量
+        foreach (Vector2Int dir in directions)
+        {
+            List<SkillTargetInfo> targets = SkillExecutor.GetAffectedTargets(releaseCell, selectedSkill.areaData, dir);
+
+            int hitCount = 0;
+            float totalHP = 0;
+
+            // 遍历所有目标，统计命中的玩家单位
+            foreach (SkillTargetInfo targetInfo in targets)
+            {
+                // 假定目标格子的 occupant 存在时表示有单位，且通过 Tag 或组件判断是否为玩家
+                if (targetInfo.cell.occupant != null)
+                {
+                    // 例如：通过 Tag 判断（确保玩家单位的 Tag 设置为 "Player"）
+                    if (targetInfo.cell.occupant.CompareTag("Player"))
+                    {
+                        hitCount++;
+
+                        // 通过组件获取玩家血量（请根据实际属性名称调整）
+                        PlayerCharacter pc = targetInfo.cell.occupant.GetComponent<PlayerCharacter>();
+                        if (pc != null)
+                        {
+                            totalHP += pc.currentHealth;
+                        }
+                    }
+                }
+            }
+
+            // 根据命中数量和总血量判断是否为最佳方向
+            if (hitCount > bestHitCount || (hitCount == bestHitCount && totalHP < bestTotalHP))
+            {
+                bestHitCount = hitCount;
+                bestTotalHP = totalHP;
+                bestDirection = dir;
+                bestTargets = targets;
+            }
+        }
+
+        // 若所有方向都没有命中玩家，则可以选择默认方向（例如：上）
+        if (bestTargets == null)
+        {
+            bestDirection = new Vector2Int(0, 1);
+            bestTargets = SkillExecutor.GetAffectedTargets(releaseCell, selectedSkill.areaData, bestDirection);
+        }
+
+        // 可选：调试时高亮最佳方向的生效区域（实际游戏中可能不显示）
+        foreach (SkillTargetInfo targetInfo in bestTargets)
         {
             targetInfo.cell.cellState = GridCellState.SkillRange;
             targetInfo.cell.useTempColorOverride = true;
@@ -55,23 +116,19 @@ public class EnemySkillController : MonoBehaviour
             targetInfo.cell.RefreshVisual();
         }
 
-        // 启动技能动画协程，由技能自身 Execute 处理
-        selectedSkill.Execute(6, enemy, new List<SkillTargetInfo>(currentEffectTargets));
+        // 敌人执行技能（这里直接传入固定骰子值6，敌人不 roll 骰子）
+        selectedSkill.Execute(6, enemy, new List<SkillTargetInfo>(bestTargets));
+
+        // 清除高亮效果
         ClearSkillRangeHighlight();
+
         isSkillSelectionActive = false;
         selectedSkill = null;
-        enemy.EndTurn();
     }
 
     /// <summary>
-    /// 示例：简单选择一个释放中心，实际应由 AI 策略确定
+    /// 清除所有技能范围的高亮
     /// </summary>
-    private GridCell DetermineAIReleaseCell()
-    {
-        // 此处示例返回敌人当前所在格子
-        return enemy.currentCell;
-    }
-
     private void ClearSkillRangeHighlight()
     {
         for (int x = 0; x < gridMap.gridWidth; x++)

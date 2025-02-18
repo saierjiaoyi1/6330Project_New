@@ -20,13 +20,15 @@ public class EnemyCharacter : BaseCharacter
                 if (path != null && path.Count > 0)
                 {
                     MoveAlongPath(path);
-                    return; // 在移动协程结束后会自动结束回合
+                    //return; // 在移动协程结束后会自动结束回合
                 }
             }
         }
 
+        gameObject.GetComponent<EnemySkillController>().EnemyStartAttack();
+
         // 移动结束后直接结束回合
-        EndTurn();
+        //EndTurn();
     }
 
     /// <summary>
