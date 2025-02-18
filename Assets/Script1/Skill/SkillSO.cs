@@ -26,9 +26,12 @@ public abstract class SkillSO : ScriptableObject
     [Tooltip("例如伤害值或治疗值")]
     public int powerValue;
 
-    [Header("视觉配置")]
+    [Header("视觉配置（现在没用）")]
     [Tooltip("技能生效范围高亮时的格子颜色")]
     public Color effectCellColor = Color.red;
+
+    [Header("技能播动画类型")]
+    public int skillAnimType;
 
     /// <summary>
     /// 执行技能效果。  

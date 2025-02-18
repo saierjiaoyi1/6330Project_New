@@ -58,6 +58,10 @@ public abstract class BaseCharacter : MonoBehaviour
     [Tooltip("血条在他身上的y轴坐标")]
     public float healthBarPosY = 2.0f;
 
+    [Header("角色Animator")]
+    [Tooltip("角色Animator")]
+    public Animator animator;
+
     /// <summary>
     /// 游戏开始时将角色吸附到离其最近的格子中心
     /// </summary>
@@ -361,6 +365,14 @@ public abstract class BaseCharacter : MonoBehaviour
     }
 
     protected void Die()
+    {
+        //实现角色死亡方法
+        Debug.Log(this.gameObject + "死掉了");
+        TurnBasedManager.Instance.RemoveCharacter(this);
+        Destroy(this.gameObject);
+    }
+
+    protected void PlayAttackAnim(int AnimValue)
     {
         //实现角色死亡方法
         Debug.Log(this.gameObject + "死掉了");

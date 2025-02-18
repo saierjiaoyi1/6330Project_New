@@ -17,6 +17,7 @@ public class FireballSkillSO : SkillSO
         caster.currentState = CharacterState.Acting;
         Debug.Log($"{skillName} 开始播放动画...");
         // 播放动画（此处用等待模拟动画播放时间）
+
         yield return new WaitForSeconds(1f);
         // 在动画达到特定节点时，结算技能效果
 

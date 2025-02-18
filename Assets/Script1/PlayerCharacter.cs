@@ -36,6 +36,11 @@ public class PlayerCharacter : BaseCharacter
                 }
             }
         }
+        if(animator != null)
+        {
+            if(currentState == CharacterState.Moving) animator.SetBool("isRunning", true);
+            else animator.SetBool("isRunning", false);
+        }
     }
 
     bool IsBlockedByUI()
