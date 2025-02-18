@@ -10,9 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c585c7ecb4525041aeeda73fe17d71b, type: 3}
-  m_Name: ZhiXian3
+  m_Name: 05-2GridHeavyAttack
   m_EditorClassIdentifier: 
-  effectOffsets:
-  - {x: 0, y: 1}
-  - {x: 0, y: 2}
-  - {x: 0, y: 3}
+  description: "\u9762\u524D2\u4E2A\u683C\u7684Blunt\u653B\u51FB"
+  cellDataList:
+  - offset: {x: 0, y: 1}
+    cellColor: {r: 0.34901962, g: 0.34901962, b: 0.34901962, a: 1}
+    featureCode: 0
+  - offset: {x: 0, y: 2}
+    cellColor: {r: 0.34901962, g: 0.34901962, b: 0.34901962, a: 1}
+    featureCode: 0

@@ -5,6 +5,7 @@ using System.Collections;
 public class TurnBasedManager : MonoBehaviour
 {
     public static TurnBasedManager Instance;
+    public CameraController cameraController;
 
     /// <summary>
     /// 记录回合顺序的角色列表
@@ -49,6 +50,7 @@ public class TurnBasedManager : MonoBehaviour
         if (gameOver) return;
         if (turnOrder.Count == 0) return;
         BaseCharacter currentCharacter = turnOrder[currentTurnIndex];
+        cameraController.target = currentCharacter.gameObject.transform.GetChild(0);
         Debug.Log("当前回合角色：" + currentCharacter.Name);
         currentCharacter.OnTurnStart();
     }
@@ -127,7 +129,11 @@ public class TurnBasedManager : MonoBehaviour
             gameOver = true;
             Debug.Log("所有敌人已死亡，胜利！");
             if (victoryUI != null)
+            {
                 victoryUI.SetActive(true);
+                victoryUI.transform.SetAsLastSibling();
+            }
+                
         }
         // 如果没有玩家存活，则失败
         else if (!anyPlayerAlive)
@@ -135,7 +141,11 @@ public class TurnBasedManager : MonoBehaviour
             gameOver = true;
             Debug.Log("所有玩家已死亡，失败！");
             if (defeatUI != null)
+            {
                 defeatUI.SetActive(true);
+                defeatUI.transform.SetAsLastSibling();
+            }
+                
         }
     }
 }

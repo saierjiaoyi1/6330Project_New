@@ -4,6 +4,9 @@ using System.Collections.Generic;
 [CreateAssetMenu(fileName = "SkillAreaData", menuName = "Skill/AreaData", order = 1)]
 public class SkillAreaData : ScriptableObject
 {
+    [TextArea]
+    public string description;
+
     [Tooltip("相对于释放中心的格子偏移量列表，例如： (0,0) 表示中心；(0,1),(0,-1),(1,0),(-1,0) 可构成十字形")]
     public List<SkillAreaCellData> cellDataList = new List<SkillAreaCellData>();
 }

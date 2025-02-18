@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c585c7ecb4525041aeeda73fe17d71b, type: 3}
   m_Name: 03-ShortFire
   m_EditorClassIdentifier: 
+  description: "\u9762\u524D4\u683C\u7684\u5C0F\u8303\u56F4\u706B\u7CFB\u6280\u80FD"
   cellDataList:
   - offset: {x: 0, y: 1}
     cellColor: {r: 1, g: 0, b: 0, a: 1}

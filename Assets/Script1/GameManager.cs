@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
         LoadScene("Main Menu");
     }
 
-    //roll骰子
+    //roll骰子相关---------------------------------------------------------------
     public async Task<(int, int)> RollDice()
     {
         dice1Result = null;
@@ -129,4 +129,5 @@ public class GameManager : MonoBehaviour
             await Task.Delay(100); // 每 100ms 检查一次
         }
     }
+    //roll骰子相关结束-----------------------------------------------------------
 }

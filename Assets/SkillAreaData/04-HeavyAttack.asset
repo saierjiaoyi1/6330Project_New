@@ -10,19 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c585c7ecb4525041aeeda73fe17d71b, type: 3}
-  m_Name: 02-line4Ice
+  m_Name: 04-HeavyAttack
   m_EditorClassIdentifier: 
-  description: "4\u683C\u957F\u7684\u51B0\u7CFB\u6280\u80FD"
+  description: "\u9762\u524D1\u4E2A\u683C\u7684Blunt\u7C7B\u578B\u7684\u653B\u51FB"
   cellDataList:
   - offset: {x: 0, y: 1}
-    cellColor: {r: 0, g: 0.7882353, b: 1, a: 1}
-    featureCode: 0
-  - offset: {x: 0, y: 2}
-    cellColor: {r: 0, g: 0.7882353, b: 1, a: 1}
-    featureCode: 0
-  - offset: {x: 0, y: 3}
-    cellColor: {r: 0, g: 0.7882353, b: 1, a: 1}
-    featureCode: 0
-  - offset: {x: 0, y: 4}
-    cellColor: {r: 0, g: 0.7882353, b: 1, a: 1}
+    cellColor: {r: 0.348, g: 0.348, b: 0.348, a: 1}
     featureCode: 0
