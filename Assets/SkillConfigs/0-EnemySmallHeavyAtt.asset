@@ -9,19 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54754f3d6ed603c4882ebb4a0e5c0651, type: 3}
+  m_Script: {fileID: 11500000, guid: 2177687e161476d4eafb4585519a959f, type: 3}
   m_Name: 0-EnemySmallHeavyAtt
   m_EditorClassIdentifier: 
-  skillName: 
-  skillType: 
-  description: 
+  skillName: EnemySmallHeavyAtt
+  skillType: Blunt
+  description: "\u654C\u4EBA\u7684\u5355\u683C\u91CD\u653B\u51FB"
   skillIcon: {fileID: 0}
   range: {fileID: 0}
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0
-  areaData: {fileID: 0}
-  targetType: 0
-  powerValue: 0
+  areaData: {fileID: 11400000, guid: ea2ef83496fb3734d9e6eccf805cf17c, type: 2}
+  targetType: 1
+  powerValue: 10
   effectCellColor: {r: 1, g: 0, b: 0, a: 1}
   skillAnimType: 0

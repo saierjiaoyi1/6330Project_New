@@ -37902,6 +37902,7 @@ MonoBehaviour:
   turnOrder:
   - {fileID: 1374353384}
   - {fileID: 685638582}
+  - {fileID: 1892865121}
   currentTurnIndex: 0
   roundCounter: 1
   victoryUI: {fileID: 157266200}
@@ -43170,7 +43171,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388090657}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1388090659
 Camera:
   m_ObjectHideFlags: 0
@@ -55228,6 +55229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1892865122}
   - component: {fileID: 1892865121}
+  - component: {fileID: 1892865123}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Untagged
@@ -55255,7 +55257,8 @@ MonoBehaviour:
   moveSpeed: 5
   currentState: 0
   orientation: 2
-  skillList: []
+  skillList:
+  - {fileID: 11400000, guid: 7bb9368c75c568244bd5497785b074bf, type: 2}
   currentCell: {fileID: 0}
   modelTransform: {fileID: 441172693}
   team: 1
@@ -55285,6 +55288,20 @@ Transform:
   - {fileID: 441172693}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1892865123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892865120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279b0c42a9c96ff47b48c38e0bcc18a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 1892865121}
+  gridMap: {fileID: 1324632931}
 --- !u!1 &1900764686
 GameObject:
   m_ObjectHideFlags: 0

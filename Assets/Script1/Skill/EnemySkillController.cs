@@ -43,81 +43,18 @@ public class EnemySkillController : MonoBehaviour
         isSkillSelectionActive = true;
         enemy.currentState = CharacterState.Acting;
 
-        // 以敌人当前所在格子作为释放中心
-        GridCell releaseCell = enemy.currentCell;
-
-        // 定义四个正方向（注意：这里假定上为(0,1)，右为(1,0)，下为(0,-1)，左为(-1,0)）
-        Vector2Int[] directions = new Vector2Int[]
+        List<GridCell> effectGrids = gridMap.GetNeighbors(enemy.currentCell);
+        foreach(GridCell grid in effectGrids)
         {
-            new Vector2Int(0, 1),   // 上
-            new Vector2Int(1, 0),   // 右
-            new Vector2Int(0, -1),  // 下
-            new Vector2Int(-1, 0)   // 左
-        };
-
-        // 用于记录最佳方向的数据
-        List<SkillTargetInfo> bestTargets = null;
-        Vector2Int bestDirection = Vector2Int.zero;
-        int bestHitCount = -1;
-        float bestTotalHP = int.MaxValue;
-
-        // 遍历四个方向，计算每个方向命中玩家的数量和总血量
-        foreach (Vector2Int dir in directions)
-        {
-            List<SkillTargetInfo> targets = SkillExecutor.GetAffectedTargets(releaseCell, selectedSkill.areaData, dir);
-
-            int hitCount = 0;
-            float totalHP = 0;
-
-            // 遍历所有目标，统计命中的玩家单位
-            foreach (SkillTargetInfo targetInfo in targets)
+            if (grid.occupant != null && grid.occupant.GetComponent<PlayerCharacter>() != null)
             {
-                // 假定目标格子的 occupant 存在时表示有单位，且通过 Tag 或组件判断是否为玩家
-                if (targetInfo.cell.occupant != null)
-                {
-                    // 例如：通过 Tag 判断（确保玩家单位的 Tag 设置为 "Player"）
-                    if (targetInfo.cell.occupant.CompareTag("Player"))
-                    {
-                        hitCount++;
-
-                        // 通过组件获取玩家血量（请根据实际属性名称调整）
-                        PlayerCharacter pc = targetInfo.cell.occupant.GetComponent<PlayerCharacter>();
-                        if (pc != null)
-                        {
-                            totalHP += pc.currentHealth;
-                        }
-                    }
-                }
-            }
-
-            // 根据命中数量和总血量判断是否为最佳方向
-            if (hitCount > bestHitCount || (hitCount == bestHitCount && totalHP < bestTotalHP))
-            {
-                bestHitCount = hitCount;
-                bestTotalHP = totalHP;
-                bestDirection = dir;
-                bestTargets = targets;
+                // 敌人执行技能（这里直接传入固定骰子值6，敌人不 roll 骰子）
+                selectedSkill.Execute(6, enemy, new List<SkillTargetInfo> { new SkillTargetInfo(grid, 0, Color.white) });
+                break;
             }
         }
 
-        // 若所有方向都没有命中玩家，则可以选择默认方向（例如：上）
-        if (bestTargets == null)
-        {
-            bestDirection = new Vector2Int(0, 1);
-            bestTargets = SkillExecutor.GetAffectedTargets(releaseCell, selectedSkill.areaData, bestDirection);
-        }
-
-        // 可选：调试时高亮最佳方向的生效区域（实际游戏中可能不显示）
-        foreach (SkillTargetInfo targetInfo in bestTargets)
-        {
-            targetInfo.cell.cellState = GridCellState.SkillRange;
-            targetInfo.cell.useTempColorOverride = true;
-            targetInfo.cell.tempColorOverride = targetInfo.cellColor;
-            targetInfo.cell.RefreshVisual();
-        }
-
-        // 敌人执行技能（这里直接传入固定骰子值6，敌人不 roll 骰子）
-        selectedSkill.Execute(6, enemy, new List<SkillTargetInfo>(bestTargets));
+        
 
         // 清除高亮效果
         ClearSkillRangeHighlight();
@@ -145,4 +82,21 @@ public class EnemySkillController : MonoBehaviour
             }
         }
     }
+
+    // 工具方法：将任意方向向量转换为最接近的四个正方向（以 Vector2Int 表示）
+    private Vector2Int GetCardinalDirection(Vector3 dir)
+    {
+        if (dir == Vector3.zero) return Vector2Int.zero;
+        float angle = Mathf.Atan2(dir.z, dir.x) * Mathf.Rad2Deg;
+        if (angle < 0) angle += 360;
+        if (angle >= 45 && angle < 135)
+            return Vector2Int.up;
+        else if (angle >= 135 && angle < 225)
+            return Vector2Int.left;
+        else if (angle >= 225 && angle < 315)
+            return Vector2Int.down;
+        else
+            return Vector2Int.right;
+    }
+
 }
