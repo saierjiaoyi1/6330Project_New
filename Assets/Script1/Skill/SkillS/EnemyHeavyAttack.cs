@@ -26,6 +26,7 @@ public class EnemyHeavyAttackSkillSO : SkillSO
         else if (diceValue <= 11 && diceValue >= 9) finalValue = powerValue * 1.5f;
         else if (diceValue <= 8 && diceValue >= 3) finalValue = powerValue * 1.0f;
         else finalValue = powerValue * 0.8f;
+        finalValue = finalValue * caster.attack / 10;
         foreach (SkillTargetInfo targetInfo in targets)
         {
             if (targetInfo.cell != null && targetInfo.cell.occupant != null)

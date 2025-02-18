@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54754f3d6ed603c4882ebb4a0e5c0651, type: 3}
   m_Name: HeavyAttackSkill
   m_EditorClassIdentifier: 
-  skillName: Heavy Attack
+  skillName: "Chef\u2019s Orders"
   skillType: Blunt
-  description: 
+  description: "Shout to increase the character\u2019s defense for 2 turns while
+    making enemies within 4 tiles attack the character."
   skillIcon: {fileID: 21300000, guid: 9dcba26642ef1bd47b8220224d551dc7, type: 3}
   range: {fileID: 21300000, guid: c29d8727615cc8640a3a41e8e82fa542, type: 3}
   releaseType: 0

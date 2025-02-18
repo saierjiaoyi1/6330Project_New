@@ -11,7 +11,7 @@ public abstract class BaseCharacter : MonoBehaviour
     public float health = 100;
     public float currentHealth = 100;
     [Tooltip("攻击力")]
-    public int attack = 10;
+    public float attack = 10;
     [Tooltip("移动范围（单位：格子数）")]
     public int movementRange = 3;
     [Tooltip("移动速度，单位：格子/秒")]

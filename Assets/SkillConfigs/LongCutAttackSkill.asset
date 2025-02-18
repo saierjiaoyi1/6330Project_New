@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0a7fe50ebc98c49bde347e059f6aa4, type: 3}
   m_Name: LongCutAttackSkill
   m_EditorClassIdentifier: 
-  skillName: LongAttack
+  skillName: Studding Stab
   skillType: Cut
-  description: 
+  description: Stab forward in one direction, dealing cutting damage in a 1x5 area
+    in the chosen direction.
   skillIcon: {fileID: 0}
   range: {fileID: 0}
   releaseType: 0

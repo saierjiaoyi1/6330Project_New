@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54754f3d6ed603c4882ebb4a0e5c0651, type: 3}
   m_Name: 2GridHeavyAtt
   m_EditorClassIdentifier: 
-  skillName: MedHeavyAttack
+  skillName: Tray Bash
   skillType: Blunt
-  description: 
+  description: Bash the shield tray in one direction, dealing blunt damage in a 1x2
+    area in the chosen direction.
   skillIcon: {fileID: 0}
   range: {fileID: 0}
   releaseType: 0

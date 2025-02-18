@@ -43,6 +43,8 @@ public class EnemySkillController : MonoBehaviour
         isSkillSelectionActive = true;
         enemy.currentState = CharacterState.Acting;
 
+        bool ifAttack = false;
+
         List<GridCell> effectGrids = gridMap.GetNeighbors(enemy.currentCell);
         foreach(GridCell grid in effectGrids)
         {
@@ -50,8 +52,13 @@ public class EnemySkillController : MonoBehaviour
             {
                 // 敌人执行技能（这里直接传入固定骰子值6，敌人不 roll 骰子）
                 selectedSkill.Execute(6, enemy, new List<SkillTargetInfo> { new SkillTargetInfo(grid, 0, Color.white) });
+                ifAttack = true;
                 break;
             }
+        }
+        if(ifAttack == false)
+        {
+            enemy.EndTurn();
         }
 
         

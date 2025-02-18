@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54754f3d6ed603c4882ebb4a0e5c0651, type: 3}
   m_Name: SmallHeavyAttackSkill
   m_EditorClassIdentifier: 
-  skillName: Single Attack
+  skillName: Rolling Pin Smash
   skillType: Blunt
-  description: 
+  description: Execute a single target smash in one direction, dealing blunt damage.
   skillIcon: {fileID: 0}
   range: {fileID: 0}
   releaseType: 0
