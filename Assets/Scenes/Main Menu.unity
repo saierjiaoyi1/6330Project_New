@@ -524,15 +524,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseInputEnabled: 1
   levels:
-  - levelName: Test Level1
+  - levelName: Level1
     description: 
-    sceneName: SampleLevel1
-  - levelName: Test Level2
+    sceneName: Samplenew1
+  - levelName: Level2
     description: 
-    sceneName: SampleLevel2
-  - levelName: SampleScene
-    description: 
-    sceneName: SampleScene
+    sceneName: Samplenew2
   SelectedLevelIndex: -1
   dice1: {fileID: 0}
   dice2: {fileID: 0}

@@ -8,7 +8,6 @@ public class TurnBasedManager : MonoBehaviour
     public static TurnBasedManager Instance;
     public CameraController cameraController;
 
-
     /// <summary>
     /// 记录回合顺序的角色列表
     /// </summary>

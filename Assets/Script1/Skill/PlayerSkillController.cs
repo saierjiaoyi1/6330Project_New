@@ -105,6 +105,10 @@ public class PlayerSkillController : MonoBehaviour
     /// </summary>
     public void SelectSkill(int skillIndex)
     {
+        if(player.currentState == CharacterState.Acting || player.currentState == CharacterState.SelectingSkill)
+        {
+            return;
+        }
         if (skillIndex < 0 || skillIndex >= player.skillList.Count)
         {
             Debug.LogError("无效的技能索引！");
