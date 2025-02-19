@@ -19,7 +19,7 @@ MonoBehaviour:
   skillIcon: {fileID: 21300000, guid: 07fa104aaf0296a428a04bcd00159620, type: 3}
   range: {fileID: 21300000, guid: c4c3b865528f3094b8c3420b6d0e87d3, type: 3}
   releaseType: 0
-  releaseRange: 0
+  releaseRange: 6
   effectAreaType: 0
   areaData: {fileID: 11400000, guid: 7658b4afd2611e84fae70ea04c25312f, type: 2}
   targetType: 0

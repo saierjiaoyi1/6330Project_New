@@ -23,6 +23,6 @@ MonoBehaviour:
   effectAreaType: 0
   areaData: {fileID: 11400000, guid: 1e13319de181bb3478b4ee43d682ba8f, type: 2}
   targetType: 0
-  powerValue: 18
+  powerValue: 7
   effectCellColor: {r: 1, g: 0, b: 0, a: 1}
   skillAnimType: 0
