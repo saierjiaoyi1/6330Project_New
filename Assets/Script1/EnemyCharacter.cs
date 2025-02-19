@@ -25,9 +25,14 @@ public class EnemyCharacter : BaseCharacter
             }
         }
 
-        gameObject.GetComponent<EnemySkillController>().EnemyStartAttack();
-
+        
         // 移动结束后直接结束回合
+        //EndTurn();
+    }
+
+    protected override void OnMovementComplete()
+    {
+        gameObject.GetComponent<EnemySkillController>().EnemyStartAttack();
         //EndTurn();
     }
 
