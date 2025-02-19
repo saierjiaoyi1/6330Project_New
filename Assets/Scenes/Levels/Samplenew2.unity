@@ -10500,6 +10500,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3822000403296095104, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
+      propertyPath: uiCanvas
+      value: 
+      objectReference: {fileID: 1298185653}
+    - target: {fileID: 3822000403296095104, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
       propertyPath: currentHealth
       value: 20
       objectReference: {fileID: 0}
