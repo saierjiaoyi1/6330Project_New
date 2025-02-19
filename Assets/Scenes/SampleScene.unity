@@ -39583,6 +39583,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlazedCookie
       objectReference: {fileID: 0}
+    - target: {fileID: 9118898816121940430, guid: 55c2ab468e42e02488c90021441d1c56, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1298185653}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
