@@ -778,6 +778,10 @@ PrefabInstance:
       propertyPath: uiCanvas
       value: 
       objectReference: {fileID: 1298185653}
+    - target: {fileID: 6370058985123477400, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1298185653}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.01
@@ -6527,6 +6531,10 @@ PrefabInstance:
       objectReference: {fileID: 1324632931}
     - target: {fileID: 4987387657251110517, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: uiCanvas
+      value: 
+      objectReference: {fileID: 1298185653}
+    - target: {fileID: 6370058985123477400, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
+      propertyPath: canvas
       value: 
       objectReference: {fileID: 1298185653}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
@@ -16778,7 +16786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraController: {fileID: 963194229}
   turnOrder:
-  - {fileID: 0}
+  - {fileID: 1739299323}
   - {fileID: 1493075054}
   - {fileID: 222092665}
   - {fileID: 2017693598}
@@ -24864,6 +24872,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1739299323 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3822000403296095104, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
+  m_PrefabInstance: {fileID: 750656429}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434d163daceadf24d977e7d45efbfcf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1763767523
 GameObject:
   m_ObjectHideFlags: 0
@@ -26442,6 +26461,10 @@ PrefabInstance:
       objectReference: {fileID: 1324632931}
     - target: {fileID: 4987387657251110517, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: uiCanvas
+      value: 
+      objectReference: {fileID: 1298185653}
+    - target: {fileID: 6370058985123477400, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
+      propertyPath: canvas
       value: 
       objectReference: {fileID: 1298185653}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
