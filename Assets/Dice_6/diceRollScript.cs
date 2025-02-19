@@ -31,8 +31,6 @@ public class DiceRoll : MonoBehaviour
 
     void Update()
     {
-      
-
         if (isRolling)
         {
             // 持续旋转骰子，并根据旋转时间逐渐减速
@@ -49,7 +47,6 @@ public class DiceRoll : MonoBehaviour
                 // **触发回调，通知 GameManager 结果**
                 OnRollComplete?.Invoke(this, finalFaceValue);
             }
-           
         }
     }
 
@@ -75,10 +72,7 @@ public class DiceRoll : MonoBehaviour
         // 将骰子的旋转角度设置为该面对应的角度
         transform.rotation = diceFaces[randomFaceIndex];
         // 保存最终面朝上的值（1到6）
-        finalFaceValue = randomFaceIndex + 1;  // 骰子朝上的面值，1-6
-        
-        
+        finalFaceValue = randomFaceIndex + 1;  // 骰子朝上的面值，1-6        
     }
-    
 }
 

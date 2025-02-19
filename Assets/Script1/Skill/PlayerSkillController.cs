@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class PlayerSkillController : MonoBehaviour
 {
@@ -204,33 +205,45 @@ public class PlayerSkillController : MonoBehaviour
     /// <param name="direction">
     /// 对于 SelfCentered 类型技能，可传入一个方向（四个正方向）；对其他类型技能可传 null
     /// </param>
-    private async void ExecuteSkill()
+    private void ExecuteSkill()
     {
-        if (selectedSkill == null) return;
-        // 对于 TargetUnitSelection，确保选中的释放中心格子内有单位
+        StartCoroutine(ExecuteSkillCoroutine());
+    }
+
+    private IEnumerator ExecuteSkillCoroutine()
+    {
+        if (selectedSkill == null) yield break;
+
         if (selectedSkill.releaseType == SkillReleaseType.TargetUnitSelection)
         {
             if (currentReleaseCell == null || currentReleaseCell.occupant == null)
             {
                 Debug.Log("请选择一个包含目标单位的格子！");
-                return;
+                yield break;
             }
         }
-        //先roll骰子
-        isSkillSelectionActive = false;
-        var (dice1Value, dice2Value) = await GameManager.Instance.RollDice();
-        int diceValue = dice1Value + dice2Value;
 
-        // 直接传入当前高亮（SkillRange）的格子列表
+        isSkillSelectionActive = false;
+
+        bool rollCompleted = false;
+        (int, int) diceResult = (0, 0);
+
+        yield return StartCoroutine(GameManager.Instance.RollDice(result =>
+        {
+            diceResult = result;
+            rollCompleted = true;
+        }));
+
+        while (!rollCompleted) yield return null;
+
+        int diceValue = diceResult.Item1 + diceResult.Item2;
         selectedSkill.Execute(diceValue, player, new List<SkillTargetInfo>(currentEffectTargets));
 
-        // 执行后清除所有技能高亮，并结束玩家回合
         ClearEffectRangeHighlight();
         ClearSkillAreaHighlight();
         cachedMoveRangeCells.Clear();
         isSkillSelectionActive = false;
         selectedSkill = null;
-        //player.EndTurn(); 在技能协程内结束回合
         releaseAreaCells.Clear();
     }
 

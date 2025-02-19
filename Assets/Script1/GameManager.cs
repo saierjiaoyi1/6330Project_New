@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System;
 using System.Threading.Tasks;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -103,7 +104,7 @@ public class GameManager : MonoBehaviour
     }
 
     //roll骰子相关v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v-v
-    public async Task<(int, int)> RollDice()
+    public IEnumerator RollDice(Action<(int, int)> callback)
     {
         if(dice1 == null || dice2 == null)
         {
@@ -120,9 +121,8 @@ public class GameManager : MonoBehaviour
         dice2?.StartRoll();
 
         // **等待两个骰子都完成**
-        await WaitForDiceResults();
-
-        return (dice1Result.Value, dice2Result.Value);
+        yield return StartCoroutine(WaitForDiceResults());
+        callback((dice1Result.Value, dice2Result.Value));
     }
     private void HandleDiceRoll(DiceRoll dice, int result)
     {
@@ -130,11 +130,13 @@ public class GameManager : MonoBehaviour
         if (dice == dice2) dice2Result = result;
     }
 
-    private async Task WaitForDiceResults()
+    private IEnumerator WaitForDiceResults()
     {
+        Debug.Log("开始等待骰子结果");
         while (!dice1Result.HasValue || !dice2Result.HasValue)
         {
-            await Task.Delay(100); // 每 100ms 检查一次
+            Debug.Log("等待完成");
+            yield return null;
         }
     }
     //roll骰子相关结束^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^
