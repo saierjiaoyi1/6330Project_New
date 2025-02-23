@@ -37,7 +37,7 @@ public class SkillUIManager : MonoBehaviour
         for (int i = 0; i < player.skillList.Count; i++)
         {
             int skillIndex = i; // 防止闭包问题
-            SkillSO skill = player.skillList[skillIndex];
+            SkillSO2 skill = player.skillList[skillIndex];
 
             // 实例化技能按钮预制体，并设置其父物体
             GameObject buttonObj = Instantiate(skillButtonPrefab, skillButtonContainer);

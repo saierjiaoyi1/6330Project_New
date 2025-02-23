@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 public class SkillButtonController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler
 {
-    [HideInInspector] public SkillSO skill;              // 对应的技能数据（从 PlayerCharacter.SkillList 中传入）
+    [HideInInspector] public SkillSO2 skill;              // 对应的技能数据（从 PlayerCharacter.SkillList 中传入）
     [HideInInspector] public GameObject tooltipPrefab;   // tooltip 预制体
 
     private GameObject tooltipInstance;  // 当前生成的 tooltip 实例

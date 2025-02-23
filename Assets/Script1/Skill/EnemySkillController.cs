@@ -10,7 +10,7 @@ public class EnemySkillController : MonoBehaviour
     public GridMapManager gridMap;
 
     // 当前选中的技能（由 AI 决定）
-    private SkillSO selectedSkill = null;
+    private SkillSO2 selectedSkill = null;
     // 标记是否处于技能释放状态
     private bool isSkillSelectionActive = false;
 
@@ -25,6 +25,7 @@ public class EnemySkillController : MonoBehaviour
     }
     public void EnemyStartAttack()
     {
+        enemy.EndTurn();
         // 启动 AI 选择技能
         StartCoroutine(SelectAndExecuteSkillByAI());
     }

@@ -10,7 +10,7 @@ public class PlayerSkillController : MonoBehaviour
     public GridMapManager gridMap;
 
     // 当前选中的技能资源（从玩家技能列表中选择）
-    private SkillSO selectedSkill = null;
+    public SkillSO2 selectedSkill = null;
     // 标记是否正在技能选择模式下
     private bool isSkillSelectionActive = false;
 
@@ -228,23 +228,30 @@ public class PlayerSkillController : MonoBehaviour
         bool rollCompleted = false;
         (int, int) diceResult = (0, 0);
 
+        Debug.Log("dic start");
         yield return StartCoroutine(GameManager.Instance.RollDice(result =>
         {
             diceResult = result;
             rollCompleted = true;
         }));
 
+        Debug.Log("dic complete1");
         while (!rollCompleted) yield return null;
+        Debug.Log("dic complete2");
 
         int diceValue = diceResult.Item1 + diceResult.Item2;
-        selectedSkill.Execute(diceValue, player, new List<SkillTargetInfo>(currentEffectTargets));
-
-        ClearEffectRangeHighlight();
-        ClearSkillAreaHighlight();
-        cachedMoveRangeCells.Clear();
-        isSkillSelectionActive = false;
-        selectedSkill = null;
-        releaseAreaCells.Clear();
+        Debug.Log("开始放技能");
+        yield return StartCoroutine(selectedSkill.Execute(diceValue, player, new List<SkillTargetInfo>(currentEffectTargets)));
+        //selectedSkill.Execute(diceValue, player, new List<SkillTargetInfo>(currentEffectTargets));
+        Debug.Log("放技能结束");
+        
+        ClearEffectRangeHighlight();//清除当前生效范围的高亮
+        ClearSkillAreaHighlight();//清除释放范围高亮
+        cachedMoveRangeCells.Clear();//清除缓存的移动范围格子
+        isSkillSelectionActive = false;//关闭技能选择状态
+        selectedSkill = null;//设定当前选择技能为null
+        releaseAreaCells.Clear();//清除缓存的释放范围高亮
+        player.EndTurn();
     }
 
     /// <summary>

@@ -132,10 +132,9 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator WaitForDiceResults()
     {
-        Debug.Log("开始等待骰子结果");
         while (!dice1Result.HasValue || !dice2Result.HasValue)
         {
-            Debug.Log("等待完成");
+
             yield return null;
         }
     }

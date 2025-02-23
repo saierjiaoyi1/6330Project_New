@@ -74,7 +74,6 @@ public enum Team//角色阵营
 
 public enum DamageType
 {
-    Normal,     // 普通伤害
     Fire,       // 火焰伤害
     Ice,        // 冰霜伤害
     Cut,        // Cut伤害

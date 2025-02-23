@@ -24,7 +24,7 @@ public abstract class BaseCharacter : MonoBehaviour
 
     [Header("技能列表")]
     [Tooltip("技能列表，可在编辑器中配置，也可在游戏中动态添加")]
-    public List<SkillSO> skillList = new List<SkillSO>();
+    public List<SkillSO2> skillList = new List<SkillSO2>();
 
     [Header("所属格子")]
     [Tooltip("角色当前所在的格子")]
@@ -83,7 +83,7 @@ public abstract class BaseCharacter : MonoBehaviour
     /// <summary>
     /// 寻找距离角色最近的格子，并吸附到该格子上
     /// </summary>
-    protected void SnapToNearestGridCell()
+    public void SnapToNearestGridCell()
     {
         GridMapManager gridMap = FindObjectOfType<GridMapManager>();
         if (gridMap == null || gridMap.gridCells == null) return;
@@ -301,7 +301,7 @@ public abstract class BaseCharacter : MonoBehaviour
     /// 参数 rawDamage 为原始伤害值，damageType 表示伤害类型  
     /// 方法内部根据角色抗性计算实际伤害，然后扣除血量，并显示伤害数字
     /// </summary>
-    public virtual void ReceiveDamage(int rawDamage, DamageType damageType)
+    public virtual void ReceiveDamage(float rawDamage, DamageType damageType)
     {
         float resistance = 0f;
         Color damageColor = Color.white;
