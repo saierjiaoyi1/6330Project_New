@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0378bff8de4b9147915421450143c10, type: 3}
-  m_Name: New Skill SO2
+  m_Name: NewSkillTest
   m_EditorClassIdentifier: 
   skillName: 11
   skillType: 11
@@ -30,6 +30,7 @@ MonoBehaviour:
   - rid: 823883284997210117
   - rid: 823883284997210113
   - rid: 823883284997210114
+  - rid: 4788642750824448001
   - rid: 823883284997210116
   references:
     version: 2
@@ -57,38 +58,35 @@ MonoBehaviour:
     - rid: 823883284997210117
       type: {class: TaskDisplacement, ns: , asm: Assembly-CSharp}
       data:
-        speed: 5
+        speed: 10
         curve:
           serializedVersion: 2
           m_Curve:
           - serializedVersion: 3
             time: 0.0041656494
-            value: 0.056610107
+            value: 0
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
             inSlope: 0
             outSlope: 0
             tangentMode: 0
             weightedMode: 0
             inWeight: 0
             outWeight: 0
-          - serializedVersion: 3
-            time: 0.27768528
-            value: 0.70683354
-            inSlope: 1.2117978
-            outSlope: 1.2117978
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 1.0041809
-            value: 1
-            inSlope: -0
-            outSlope: -0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.448176
-            outWeight: 0
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
         targetGridFeatureCodes: 01000000
+    - rid: 4788642750824448001
+      type: {class: TaskApplyBuff, ns: , asm: Assembly-CSharp}
+      data:
+        buff: {fileID: 11400000, guid: eb2b1b8cf0d2b91488e50081dd24edb8, type: 2}
+        target: 0
+        targetFeatureCode: 0

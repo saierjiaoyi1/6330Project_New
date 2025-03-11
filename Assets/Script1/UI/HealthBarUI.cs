@@ -12,8 +12,17 @@ public class HealthBarUI : MonoBehaviour
     [Header("血条UI组件（Slider）")]
     public Slider healthSlider;
 
+    [Header("BuffUI")]
+    public BuffUI buffUI;
+
     private BaseCharacter baseChar;  // 获取目标身上的BaseCharacter组件
-    private Camera mainCam;
+    public Camera mainCam;
+
+    private void Awake()
+    {
+        Debug.Log(Camera.main);
+        mainCam = Camera.main;
+    }
 
     void Start()
     {
@@ -29,8 +38,8 @@ public class HealthBarUI : MonoBehaviour
         {
             Debug.LogError("目标 " + target.name + " 上没有 BaseCharacter 组件！");
         }
+        baseChar.gameObject.GetComponent<BuffManager>().buffUI = buffUI;
         transform.SetParent(FindObjectOfType<Canvas>().transform, false);
-        mainCam = Camera.main;
     }
 
     void Update()

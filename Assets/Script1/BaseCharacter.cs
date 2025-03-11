@@ -1,53 +1,66 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using Sirenix.OdinInspector;
 
 public abstract class BaseCharacter : MonoBehaviour
 {
+    //基础属性
     [Header("名字")]
     public string Name;
-    [Header("基础属性")]
+    [Header("【【【【需要配置】】】】基础属性")]
     [Tooltip("血量")]
     public float health = 100;
     public float currentHealth = 100;
     [Tooltip("攻击力")]
     public float attack = 10;
+    [ReadOnly]
+    public float baseAttack;
     [Tooltip("移动范围（单位：格子数）")]
     public int movementRange = 3;
+    [ReadOnly]
+    public float baseMovementRange;
     [Tooltip("移动速度，单位：格子/秒")]
     public float moveSpeed = 3f;
-
-    [Header("状态机")]
-    public CharacterState currentState = CharacterState.Idle;
-    [Tooltip("角色朝向")]
-    public Orientation orientation = Orientation.Down;
-
-    [Header("技能列表")]
-    [Tooltip("技能列表，可在编辑器中配置，也可在游戏中动态添加")]
-    public List<SkillSO2> skillList = new List<SkillSO2>();
-
-    [Header("所属格子")]
-    [Tooltip("角色当前所在的格子")]
-    public GridCell currentCell;
-
-    [Header("模型设置")]
-    [Tooltip("用于显示角色模型的子对象。移动时只调整该对象的旋转，不影响父对象的位置。")]
-    public Transform modelTransform;
-
-    [Header("阵营")]
-    [Tooltip("设定角色的阵营是玩家还是敌人")]
-    public Team team = Team.Player;
-
-    // 新增：各类伤害抗性（0～1 之间，小数表示百分比减免）
-    [Header("抗性配置")]
+    //抗性
+    [Header("【【【【需要配置】】】】抗性配置")]
     [Tooltip("火焰伤害减免比例，例如 0.2 表示减少 20% 火焰伤害==>20点抗性意味着减少20%伤害")]
     public float fireResistance = 0;
+    [ReadOnly]
+    public float baseFireResistance;
     [Tooltip("冰霜伤害减免比例")]
     public float iceResistance = 0;
+    [ReadOnly]
+    public float baseIceResistance;
     [Tooltip("Cut伤害减免比例")]
     public float CutResistance = 0;
+    [ReadOnly]
+    public float baseCutResistance;
     [Tooltip("Blunt伤害减免比例")]
     public float BluntResistance = 0;
+    [ReadOnly]
+    public float baseBluntResistance = 0;
+    //设置该角色的阵营
+    [Header("【【【【需要配置】】】】阵营")]
+    [Tooltip("设定角色的阵营是玩家还是敌人")]
+    public Team team = Team.Player;
+    //该角色的技能
+    [Header("【【【【需要配置】】】】技能列表")]
+    [Tooltip("技能列表，可在编辑器中配置，也可在游戏中动态添加")]
+    public List<SkillSO2> skillList = new List<SkillSO2>();
+    //角色模型子物体
+    [Header("【【【【需要配置】】】】模型设置")]
+    [Tooltip("用于显示角色模型的子对象。移动时只调整该对象的旋转，不影响父对象的位置。把角色子物体中的模型放进去")]
+    public Transform modelTransform;
+
+    [Header("【不用管】状态机")]
+    public CharacterState currentState = CharacterState.Idle;
+    [Header("【不用管】角色朝向")]
+    public Orientation orientation = Orientation.Down;
+
+    [Header("【不用管】所属格子")]
+    [Tooltip("角色当前所在的格子")]
+    public GridCell currentCell;
 
     [Header("伤害数字预制体")]
     public GameObject damageTextPrefab;
@@ -55,12 +68,15 @@ public abstract class BaseCharacter : MonoBehaviour
 
     [Header("血条预制体")]
     public GameObject healthBarPrefab;
-    [Tooltip("血条在他身上的y轴坐标")]
+    [Tooltip("【按照角色身高调整】血条在他身上的y轴坐标")]
     public float healthBarPosY = 2.0f;
 
     [Header("角色Animator")]
     [Tooltip("角色Animator")]
     public Animator animator;
+
+    [Tooltip("角色buffManager")]
+    public BuffManager buffManager;
 
     /// <summary>
     /// 游戏开始时将角色吸附到离其最近的格子中心
@@ -71,13 +87,21 @@ public abstract class BaseCharacter : MonoBehaviour
     }
     protected virtual void Start()
     {
-
         // 如果在 Scene 中直接拖放了角色 prefab，但未手动指定所属格子，则自动寻找最近的格子
         if (currentCell == null)
             SnapToNearestGridCell();
+        //buffManager放进去
+        buffManager = GetComponent<BuffManager>();
         // 初始化一个血条
         HealthBarUI healthBar = Instantiate(healthBarPrefab).GetComponent<HealthBarUI>();
         healthBar.SetTarget(this.gameObject);
+        //记录所有属性的基础值
+        baseAttack = attack;
+        baseMovementRange = movementRange;
+        baseFireResistance = fireResistance;
+        baseIceResistance = iceResistance;
+        baseBluntResistance = BluntResistance;
+        baseCutResistance = CutResistance;
     }
 
     /// <summary>
@@ -269,7 +293,8 @@ public abstract class BaseCharacter : MonoBehaviour
     /// 回合结束时调用，清除移动范围高亮，并通知回合管理器进行下一回合
     /// </summary>
     public virtual void EndTurn()
-    {  
+    {
+        buffManager.OnTurnEnd();//调用buffManager结束回合方法
         currentState = CharacterState.Idle;
         ClearMovableCells();
         Debug.Log(Name + "回合结束，当前状态：" + currentState);
@@ -346,9 +371,6 @@ public abstract class BaseCharacter : MonoBehaviour
 
         // 显示伤害数字（你可以改为实例化浮动文本 prefab 等）
         ShowDamageText(effectiveDamage, damageColor);
-
-        // 可添加其它逻辑，比如播放受击动画、检查是否死亡、触发事件等
-
     }
 
     /// <summary>
@@ -373,6 +395,8 @@ public abstract class BaseCharacter : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+
+    //需要删掉
     public void PlayAttackAnim(int AnimValue)
     {
         if (animator == null) return;

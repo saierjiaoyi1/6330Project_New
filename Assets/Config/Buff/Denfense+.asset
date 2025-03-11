@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aadc3174670958349bd40dceafb5a15c, type: 3}
+  m_Name: Denfense+
+  m_EditorClassIdentifier: 
+  buffName: +defense
+  buffDescription: "\u52A0\u89D2\u8272\u9632\u5FA1\u529B\uFF08\u5B9E\u9645\u4E0A\u662F\u8BA9\u6240\u6709\u6297\u6027+50\uFF09"
+  buffIcon: {fileID: 21300000, guid: c29d8727615cc8640a3a41e8e82fa542, type: 3}
+  duration: 3
+  buffType: 0
+  ifOnlyOne: 1
+  modifications:
+  - attributeType: 1
+    modificationType: 0
+    value: 50
+  - attributeType: 2
+    modificationType: 0
+    value: 50
+  - attributeType: 3
+    modificationType: 0
+    value: 50
+  - attributeType: 4
+    modificationType: 0
+    value: 50
