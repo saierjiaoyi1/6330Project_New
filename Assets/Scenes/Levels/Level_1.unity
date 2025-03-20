@@ -12174,7 +12174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 748682225035625334, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.095
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 748682225035625334, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12212,6 +12212,10 @@ PrefabInstance:
       propertyPath: gridMap
       value: 
       objectReference: {fileID: 1324632931}
+    - target: {fileID: 977909554706507655, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.078
+      objectReference: {fileID: 0}
     - target: {fileID: 2459027852244266786, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
       propertyPath: m_Name
       value: PlayerA
@@ -12245,9 +12249,13 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8872230867916978190, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
+      propertyPath: skillList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872230867916978190, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
       propertyPath: skillList.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 0b7745ce6b3681c4a93261fcc9703f9d, type: 2}
+      objectReference: {fileID: 11400000, guid: 047fdf2566593984394b8a6c7a365ff6, type: 2}
     - target: {fileID: 8872230867916978190, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
       propertyPath: skillList.Array.data[1]
       value: 
@@ -22924,26 +22932,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlainCookie
       objectReference: {fileID: 0}
-    - target: {fileID: 8889929230153019868, guid: 55c2ab468e42e02488c90021441d1c56, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8889929230153019868, guid: 55c2ab468e42e02488c90021441d1c56, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8889929230153019868, guid: 55c2ab468e42e02488c90021441d1c56, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8889929230153019868, guid: 55c2ab468e42e02488c90021441d1c56, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8889929230153019868, guid: 55c2ab468e42e02488c90021441d1c56, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9118898816121940430, guid: 55c2ab468e42e02488c90021441d1c56, type: 3}
       propertyPath: canvas
       value: 
@@ -29138,7 +29126,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.35355338, y: 0.35355338, z: -0.1464466, w: 0.8535535}
-  m_LocalPosition: {x: 1.69, y: 23.37, z: -6.09}
+  m_LocalPosition: {x: 5.9, y: 17.5, z: -1.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29163,7 +29151,7 @@ MonoBehaviour:
   rotateSensitivity: 2
   zoomSensitivity: 5
   minOrthoSize: 2
-  maxOrthoSize: 20
+  maxOrthoSize: 4
   pitch: 45
 --- !u!4 &963569780 stripped
 Transform:
@@ -40573,7 +40561,7 @@ Transform:
   m_GameObject: {fileID: 1324632930}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.121, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

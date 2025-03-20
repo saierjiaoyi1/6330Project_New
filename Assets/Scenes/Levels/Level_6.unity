@@ -15934,7 +15934,7 @@ MonoBehaviour:
   rotateSensitivity: 2
   zoomSensitivity: 5
   minOrthoSize: 2
-  maxOrthoSize: 20
+  maxOrthoSize: 4
   pitch: 45
 --- !u!1 &980134244
 GameObject:

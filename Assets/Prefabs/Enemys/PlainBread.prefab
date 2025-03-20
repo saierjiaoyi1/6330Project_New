@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8029986603390042478}
   - component: {fileID: 4987387657251110517}
   - component: {fileID: 968879019699660900}
+  - component: {fileID: 3730268571394893628}
   m_Layer: 0
   m_Name: PlainBread
   m_TagString: Untagged
@@ -50,24 +51,30 @@ MonoBehaviour:
   health: 8
   currentHealth: 8
   attack: 3
+  baseAttack: 0
   movementRange: 5
+  baseMovementRange: 0
   moveSpeed: 5
+  fireResistance: 0
+  baseFireResistance: 0
+  iceResistance: 0
+  baseIceResistance: 0
+  CutResistance: -50
+  baseCutResistance: 0
+  BluntResistance: 50
+  baseBluntResistance: 0
+  team: 1
+  skillList: []
+  modelTransform: {fileID: 0}
   currentState: 0
   orientation: 2
-  skillList:
-  - {fileID: 11400000, guid: 7bb9368c75c568244bd5497785b074bf, type: 2}
   currentCell: {fileID: 0}
-  modelTransform: {fileID: 0}
-  team: 1
-  fireResistance: 0
-  iceResistance: 0
-  CutResistance: -50
-  BluntResistance: 50
   damageTextPrefab: {fileID: 3637406298157149677, guid: faf0c20e2cc24094885924645a3ba1a0, type: 3}
   uiCanvas: {fileID: 0}
   healthBarPrefab: {fileID: 3061070065571699259, guid: 638b826c1085d9841856478c8745099e, type: 3}
   healthBarPosY: 1.2
   animator: {fileID: 0}
+  buffManager: {fileID: 0}
 --- !u!114 &968879019699660900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,6 +89,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 4987387657251110517}
   gridMap: {fileID: 0}
+--- !u!114 &3730268571394893628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8654624779302240911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 757ac959b548d894894e5caf185bf2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeBuffs: []
+  buffUI: {fileID: 0}
 --- !u!1001 &6693653923067678821
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108,7 +129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8731561477482458984, guid: 7e98b3cbe6e256444a0d3c2d861bff09, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.09
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8731561477482458984, guid: 7e98b3cbe6e256444a0d3c2d861bff09, type: 3}
       propertyPath: m_LocalPosition.y
@@ -116,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8731561477482458984, guid: 7e98b3cbe6e256444a0d3c2d861bff09, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.149
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8731561477482458984, guid: 7e98b3cbe6e256444a0d3c2d861bff09, type: 3}
       propertyPath: m_LocalRotation.w

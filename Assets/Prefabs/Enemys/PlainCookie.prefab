@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 190180078920084919}
   - component: {fileID: 62631664302094024}
   - component: {fileID: 3019921199331304523}
+  - component: {fileID: 9105473897207763751}
   m_Layer: 0
   m_Name: PlainCookie
   m_TagString: Untagged
@@ -50,24 +51,30 @@ MonoBehaviour:
   health: 6
   currentHealth: 6
   attack: 3
+  baseAttack: 0
   movementRange: 7
+  baseMovementRange: 0
   moveSpeed: 5
+  fireResistance: 0
+  baseFireResistance: 0
+  iceResistance: 0
+  baseIceResistance: 0
+  CutResistance: 50
+  baseCutResistance: 0
+  BluntResistance: -50
+  baseBluntResistance: 0
+  team: 1
+  skillList: []
+  modelTransform: {fileID: 0}
   currentState: 0
   orientation: 2
-  skillList:
-  - {fileID: 11400000, guid: 7bb9368c75c568244bd5497785b074bf, type: 2}
   currentCell: {fileID: 0}
-  modelTransform: {fileID: 0}
-  team: 1
-  fireResistance: 0
-  iceResistance: 0
-  CutResistance: 50
-  BluntResistance: -50
   damageTextPrefab: {fileID: 3637406298157149677, guid: faf0c20e2cc24094885924645a3ba1a0, type: 3}
   uiCanvas: {fileID: 0}
   healthBarPrefab: {fileID: 3061070065571699259, guid: 638b826c1085d9841856478c8745099e, type: 3}
   healthBarPosY: 1.2
   animator: {fileID: 0}
+  buffManager: {fileID: 0}
 --- !u!114 &3019921199331304523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,6 +89,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 62631664302094024}
   gridMap: {fileID: 0}
+--- !u!114 &9105473897207763751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5250345906858497822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 757ac959b548d894894e5caf185bf2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeBuffs: []
+  buffUI: {fileID: 0}
 --- !u!1001 &3710005963965153934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -116,19 +137,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198219724195410770, guid: e4bf2393b1458fd4faa2adb7670f4cb3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70557386
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5198219724195410770, guid: e4bf2393b1458fd4faa2adb7670f4cb3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5198219724195410770, guid: e4bf2393b1458fd4faa2adb7670f4cb3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7086365
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5198219724195410770, guid: e4bf2393b1458fd4faa2adb7670f4cb3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5198219724195410770, guid: e4bf2393b1458fd4faa2adb7670f4cb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -136,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198219724195410770, guid: e4bf2393b1458fd4faa2adb7670f4cb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90.248
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5198219724195410770, guid: e4bf2393b1458fd4faa2adb7670f4cb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

@@ -14037,6 +14037,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8872230867916978190, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
+      propertyPath: skillList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872230867916978190, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
       propertyPath: skillList.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 0b7745ce6b3681c4a93261fcc9703f9d, type: 2}
@@ -28315,7 +28319,7 @@ MonoBehaviour:
   rotateSensitivity: 2
   zoomSensitivity: 5
   minOrthoSize: 2
-  maxOrthoSize: 20
+  maxOrthoSize: 4
   pitch: 45
 --- !u!1 &963564882
 GameObject:

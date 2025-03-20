@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 748682225035625334}
   - component: {fileID: 8872230867916978190}
   - component: {fileID: 815475469688875761}
+  - component: {fileID: 4340006717281950633}
   m_Layer: 0
   m_Name: PlayerA
   m_TagString: Untagged
@@ -50,26 +51,31 @@ MonoBehaviour:
   health: 100
   currentHealth: 100
   attack: 10
+  baseAttack: 0
   movementRange: 4
+  baseMovementRange: 0
   moveSpeed: 5
+  fireResistance: 10
+  baseFireResistance: 0
+  iceResistance: 10
+  baseIceResistance: 0
+  CutResistance: 0
+  baseCutResistance: 0
+  BluntResistance: 0
+  baseBluntResistance: 0
+  team: 0
+  skillList:
+  - {fileID: 11400000, guid: 047fdf2566593984394b8a6c7a365ff6, type: 2}
+  modelTransform: {fileID: 977909554706507655}
   currentState: 0
   orientation: 2
-  skillList:
-  - {fileID: 11400000, guid: d9268987bffffd84fac64c084266cb9e, type: 2}
-  - {fileID: 11400000, guid: 2f152c01c2ffd294fa9c0ee105faddae, type: 2}
-  - {fileID: 11400000, guid: 8f2fe6f39c7e8a44d87c8bbaaf87f414, type: 2}
   currentCell: {fileID: 0}
-  modelTransform: {fileID: 977909554706507655}
-  team: 0
-  fireResistance: 10
-  iceResistance: 10
-  CutResistance: 0
-  BluntResistance: 0
   damageTextPrefab: {fileID: 3637406298157149677, guid: faf0c20e2cc24094885924645a3ba1a0, type: 3}
   uiCanvas: {fileID: 0}
   healthBarPrefab: {fileID: 3061070065571699259, guid: 638b826c1085d9841856478c8745099e, type: 3}
   healthBarPosY: 2.5
   animator: {fileID: 825495058311775818}
+  buffManager: {fileID: 0}
   img: {fileID: 21300000, guid: d0e9d1ae7d22ed64ab297eedff7a60b4, type: 3}
 --- !u!114 &815475469688875761
 MonoBehaviour:
@@ -85,7 +91,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 8872230867916978190}
   gridMap: {fileID: 0}
+  selectedSkill: {fileID: 0}
   releaseAreaCells: []
+--- !u!114 &4340006717281950633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2459027852244266786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 757ac959b548d894894e5caf185bf2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeBuffs: []
+  buffUI: {fileID: 0}
 --- !u!1 &6069838695148964035
 GameObject:
   m_ObjectHideFlags: 0
