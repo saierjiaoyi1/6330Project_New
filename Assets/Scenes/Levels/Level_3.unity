@@ -19270,7 +19270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &885737767
 Transform:
   m_ObjectHideFlags: 0
@@ -19322,7 +19322,7 @@ MonoBehaviour:
   x: 9
   y: 2
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -19370,7 +19370,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21357,7 +21357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &963464127
 Transform:
   m_ObjectHideFlags: 0
@@ -21409,7 +21409,7 @@ MonoBehaviour:
   x: 14
   y: 3
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -21457,7 +21457,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -26858,7 +26858,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1223111585
 Transform:
   m_ObjectHideFlags: 0
@@ -26910,7 +26910,7 @@ MonoBehaviour:
   x: 9
   y: 1
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -26958,7 +26958,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27051,7 +27051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1223710356
 Transform:
   m_ObjectHideFlags: 0
@@ -27103,7 +27103,7 @@ MonoBehaviour:
   x: 9
   y: 0
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -27151,7 +27151,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29141,7 +29141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1321847749
 Transform:
   m_ObjectHideFlags: 0
@@ -29193,7 +29193,7 @@ MonoBehaviour:
   x: 9
   y: 4
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -29241,7 +29241,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -44292,7 +44292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1960167209
 Transform:
   m_ObjectHideFlags: 0
@@ -44344,7 +44344,7 @@ MonoBehaviour:
   x: 9
   y: 3
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -44392,7 +44392,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

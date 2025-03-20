@@ -3709,7 +3709,7 @@ MonoBehaviour:
   x: 17
   y: 13
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -3757,7 +3757,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5124,7 +5124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 383126613196347856, guid: a0db3c030670dc84893bcd8494fa8cc6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.5099998
+      value: -2.73
       objectReference: {fileID: 0}
     - target: {fileID: 383126613196347856, guid: a0db3c030670dc84893bcd8494fa8cc6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5441,7 +5441,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &143059810
 Transform:
   m_ObjectHideFlags: 0
@@ -5493,7 +5493,7 @@ MonoBehaviour:
   x: 1
   y: 12
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -5541,7 +5541,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6202,7 +6202,7 @@ MonoBehaviour:
   x: 17
   y: 14
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -6250,7 +6250,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7429,7 +7429,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &199925200
 Transform:
   m_ObjectHideFlags: 0
@@ -7481,7 +7481,7 @@ MonoBehaviour:
   x: 1
   y: 13
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -7529,7 +7529,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8672,7 +8672,7 @@ MonoBehaviour:
   x: 17
   y: 15
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -8720,7 +8720,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10824,7 +10824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 383126613196347856, guid: a0db3c030670dc84893bcd8494fa8cc6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.27887344
+      value: -0.49887466
       objectReference: {fileID: 0}
     - target: {fileID: 383126613196347856, guid: a0db3c030670dc84893bcd8494fa8cc6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12528,7 +12528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &368060063
 Transform:
   m_ObjectHideFlags: 0
@@ -12580,7 +12580,7 @@ MonoBehaviour:
   x: 14
   y: 14
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -12628,7 +12628,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12964,7 +12964,7 @@ MonoBehaviour:
   x: 16
   y: 3
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -13012,7 +13012,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13424,7 +13424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &385565811
 Transform:
   m_ObjectHideFlags: 0
@@ -13476,7 +13476,7 @@ MonoBehaviour:
   x: 19
   y: 13
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -13524,7 +13524,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14133,7 +14133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &401634773
 Transform:
   m_ObjectHideFlags: 0
@@ -14185,7 +14185,7 @@ MonoBehaviour:
   x: 14
   y: 5
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -14233,7 +14233,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15635,7 +15635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2844788949469433009, guid: 5e19d99c8596851438865bc52d5560a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.41
+      value: -1.6300012
       objectReference: {fileID: 0}
     - target: {fileID: 2844788949469433009, guid: 5e19d99c8596851438865bc52d5560a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15805,6 +15805,10 @@ PrefabInstance:
       propertyPath: gridMap
       value: 
       objectReference: {fileID: 1324632931}
+    - target: {fileID: 977909554706507655, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.121
+      objectReference: {fileID: 0}
     - target: {fileID: 2459027852244266786, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
       propertyPath: m_Name
       value: PlayerA
@@ -15839,12 +15843,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8872230867916978190, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
       propertyPath: skillList.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8872230867916978190, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
       propertyPath: skillList.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 0b7745ce6b3681c4a93261fcc9703f9d, type: 2}
+      objectReference: {fileID: 11400000, guid: 047fdf2566593984394b8a6c7a365ff6, type: 2}
     - target: {fileID: 8872230867916978190, guid: 1bc993467d7fccc43a771bdf299c85bd, type: 3}
       propertyPath: skillList.Array.data[1]
       value: 
@@ -16482,7 +16486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 383126613196347856, guid: a0db3c030670dc84893bcd8494fa8cc6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.7762165
+      value: 0.710001
       objectReference: {fileID: 0}
     - target: {fileID: 383126613196347856, guid: a0db3c030670dc84893bcd8494fa8cc6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16490,7 +16494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 383126613196347856, guid: a0db3c030670dc84893bcd8494fa8cc6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.27887344
+      value: -0.19887352
       objectReference: {fileID: 0}
     - target: {fileID: 383126613196347856, guid: a0db3c030670dc84893bcd8494fa8cc6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21258,7 +21262,7 @@ MonoBehaviour:
   x: 17
   y: 4
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -21306,7 +21310,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21860,7 +21864,7 @@ MonoBehaviour:
   x: 16
   y: 13
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -21908,7 +21912,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22725,7 +22729,7 @@ MonoBehaviour:
   x: 17
   y: 5
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -22773,7 +22777,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -23577,7 +23581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &727825496
 Transform:
   m_ObjectHideFlags: 0
@@ -23629,7 +23633,7 @@ MonoBehaviour:
   x: 19
   y: 14
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -23677,7 +23681,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24432,7 +24436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &755792192
 Transform:
   m_ObjectHideFlags: 0
@@ -24484,7 +24488,7 @@ MonoBehaviour:
   x: 4
   y: 16
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -24532,7 +24536,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25367,7 +25371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &778237191
 Transform:
   m_ObjectHideFlags: 0
@@ -25419,7 +25423,7 @@ MonoBehaviour:
   x: 14
   y: 13
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -25467,7 +25471,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -28105,7 +28109,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2844788949469433009, guid: 5e19d99c8596851438865bc52d5560a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.81
+      value: 0.7437845
       objectReference: {fileID: 0}
     - target: {fileID: 2844788949469433009, guid: 5e19d99c8596851438865bc52d5560a0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -28113,7 +28117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2844788949469433009, guid: 5e19d99c8596851438865bc52d5560a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.41
+      value: -1.33
       objectReference: {fileID: 0}
     - target: {fileID: 2844788949469433009, guid: 5e19d99c8596851438865bc52d5560a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28296,7 +28300,7 @@ MonoBehaviour:
   x: 16
   y: 5
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -28344,7 +28348,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31160,7 +31164,7 @@ MonoBehaviour:
   x: 16
   y: 4
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -31208,7 +31212,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31236,7 +31240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &983762399
 Transform:
   m_ObjectHideFlags: 0
@@ -31288,7 +31292,7 @@ MonoBehaviour:
   x: 19
   y: 16
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -31336,7 +31340,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31365,7 +31369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 383126613196347856, guid: a0db3c030670dc84893bcd8494fa8cc6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.82621574
+      value: 0.76
       objectReference: {fileID: 0}
     - target: {fileID: 383126613196347856, guid: a0db3c030670dc84893bcd8494fa8cc6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31373,7 +31377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 383126613196347856, guid: a0db3c030670dc84893bcd8494fa8cc6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.5099998
+      value: -2.43
       objectReference: {fileID: 0}
     - target: {fileID: 383126613196347856, guid: a0db3c030670dc84893bcd8494fa8cc6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -32243,7 +32247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1024836534
 Transform:
   m_ObjectHideFlags: 0
@@ -32295,7 +32299,7 @@ MonoBehaviour:
   x: 14
   y: 16
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -32343,7 +32347,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -35578,7 +35582,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1155995401
 Transform:
   m_ObjectHideFlags: 0
@@ -37385,7 +37389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1209665771
 Transform:
   m_ObjectHideFlags: 0
@@ -37437,7 +37441,7 @@ MonoBehaviour:
   x: 19
   y: 3
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -37485,7 +37489,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -38944,7 +38948,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1230099434
 Transform:
   m_ObjectHideFlags: 0
@@ -38996,7 +39000,7 @@ MonoBehaviour:
   x: 2
   y: 12
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -39044,7 +39048,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -41256,7 +41260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1295600630
 Transform:
   m_ObjectHideFlags: 0
@@ -41308,7 +41312,7 @@ MonoBehaviour:
   x: 19
   y: 4
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -41356,7 +41360,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -42297,7 +42301,7 @@ Transform:
   m_GameObject: {fileID: 1324632930}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.096, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42929,7 +42933,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1342157277
 Transform:
   m_ObjectHideFlags: 0
@@ -42981,7 +42985,7 @@ MonoBehaviour:
   x: 19
   y: 5
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -43029,7 +43033,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -43802,7 +43806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1377622262
 Transform:
   m_ObjectHideFlags: 0
@@ -43854,7 +43858,7 @@ MonoBehaviour:
   x: 19
   y: 15
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -43902,7 +43906,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -45609,7 +45613,7 @@ MonoBehaviour:
   x: 16
   y: 15
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -45657,7 +45661,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -47506,7 +47510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1547937073
 Transform:
   m_ObjectHideFlags: 0
@@ -47558,7 +47562,7 @@ MonoBehaviour:
   x: 14
   y: 3
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -47606,7 +47610,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -49859,7 +49863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1649898596
 Transform:
   m_ObjectHideFlags: 0
@@ -49911,7 +49915,7 @@ MonoBehaviour:
   x: 14
   y: 4
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -49959,7 +49963,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -53725,7 +53729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1769290641
 Transform:
   m_ObjectHideFlags: 0
@@ -53777,7 +53781,7 @@ MonoBehaviour:
   x: 19
   y: 2
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -53825,7 +53829,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -55329,7 +55333,7 @@ MonoBehaviour:
   x: 16
   y: 14
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -55377,7 +55381,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -56326,7 +56330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1857818879
 Transform:
   m_ObjectHideFlags: 0
@@ -56378,7 +56382,7 @@ MonoBehaviour:
   x: 3
   y: 16
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -56426,7 +56430,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -56947,7 +56951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1874949691
 Transform:
   m_ObjectHideFlags: 0
@@ -56999,7 +57003,7 @@ MonoBehaviour:
   x: 14
   y: 15
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -57047,7 +57051,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -59486,7 +59490,7 @@ MonoBehaviour:
   x: 17
   y: 3
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -59534,7 +59538,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -63797,7 +63801,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2092748949
 Transform:
   m_ObjectHideFlags: 0
@@ -63849,7 +63853,7 @@ MonoBehaviour:
   x: 4
   y: 15
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -63897,7 +63901,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
