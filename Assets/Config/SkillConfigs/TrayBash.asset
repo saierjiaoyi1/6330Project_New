@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0378bff8de4b9147915421450143c10, type: 3}
+  m_Name: TrayBash
+  m_EditorClassIdentifier: 
+  skillName: Tray Bash
+  skillType: Blunt
+  description: Bash the shield tray in one direction, dealing blunt damage in a 1x2
+    area in the chosen direction.
+  skillIcon: {fileID: 0}
+  range: {fileID: 21300000, guid: 5a16a4c21d175f14d923c66ce772f1e8, type: 3}
+  releaseType: 0
+  releaseRange: 0
+  effectAreaType: 0
+  areaData: {fileID: 11400000, guid: 89fe3fc1a761eb148bad8905ba551383, type: 2}
+  targetType: 0
+  powerValue: 0
+  effectCellColor: {r: 1, g: 0, b: 0, a: 1}
+  skillAnimType: 0
+  taskList:
+  - rid: 823883284997210115
+  - rid: 823883284997210113
+  - rid: 823883284997210114
+  - rid: 823883284997210116
+  references:
+    version: 2
+    RefIds:
+    - rid: 823883284997210113
+      type: {class: TaskWait, ns: , asm: Assembly-CSharp}
+      data:
+        duration: 1.1
+    - rid: 823883284997210114
+      type: {class: TaskDamage, ns: , asm: Assembly-CSharp}
+      data:
+        damageType: 3
+        fixedDamage: 7
+        attackMultiplier: 0
+        targetTeam: 1
+        targetFeatureCode: 0
+    - rid: 823883284997210115
+      type: {class: TaskPlayAnim, ns: , asm: Assembly-CSharp}
+      data:
+        triggerName: MagicAttack02
+    - rid: 823883284997210116
+      type: {class: TaskWait, ns: , asm: Assembly-CSharp}
+      data:
+        duration: 0.5

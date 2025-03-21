@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0378bff8de4b9147915421450143c10, type: 3}
+  m_Name: MincingSlashes
+  m_EditorClassIdentifier: 
+  skillName: Mincing Slashes
+  skillType: Cut
+  description: 'Execute a flurry of slashes in one direction, dealing cutting damage
+    in a 3x3 area in '
+  skillIcon: {fileID: 0}
+  range: {fileID: 21300000, guid: c4c3b865528f3094b8c3420b6d0e87d3, type: 3}
+  releaseType: 0
+  releaseRange: 0
+  effectAreaType: 0
+  areaData: {fileID: 11400000, guid: 7658b4afd2611e84fae70ea04c25312f, type: 2}
+  targetType: 0
+  powerValue: 0
+  effectCellColor: {r: 1, g: 0, b: 0, a: 1}
+  skillAnimType: 0
+  taskList:
+  - rid: 823883284997210115
+  - rid: 823883284997210113
+  - rid: 823883284997210114
+  - rid: 823883284997210116
+  references:
+    version: 2
+    RefIds:
+    - rid: 823883284997210113
+      type: {class: TaskWait, ns: , asm: Assembly-CSharp}
+      data:
+        duration: 1.1
+    - rid: 823883284997210114
+      type: {class: TaskDamage, ns: , asm: Assembly-CSharp}
+      data:
+        damageType: 2
+        fixedDamage: 10
+        attackMultiplier: 1
+        targetTeam: 1
+        targetFeatureCode: 0
+    - rid: 823883284997210115
+      type: {class: TaskPlayAnim, ns: , asm: Assembly-CSharp}
+      data:
+        triggerName: 360Attack
+    - rid: 823883284997210116
+      type: {class: TaskWait, ns: , asm: Assembly-CSharp}
+      data:
+        duration: 0.5

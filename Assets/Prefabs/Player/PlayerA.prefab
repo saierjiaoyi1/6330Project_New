@@ -48,16 +48,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: "\u7B2C\u4E00"
-  health: 100
-  currentHealth: 100
-  attack: 10
+  health: 35
+  currentHealth: 35
+  attack: 5
   baseAttack: 0
-  movementRange: 4
+  movementRange: 5
   baseMovementRange: 0
   moveSpeed: 5
-  fireResistance: 10
+  fireResistance: 0
   baseFireResistance: 0
-  iceResistance: 10
+  iceResistance: 0
   baseIceResistance: 0
   CutResistance: 0
   baseCutResistance: 0
@@ -65,7 +65,9 @@ MonoBehaviour:
   baseBluntResistance: 0
   team: 0
   skillList:
-  - {fileID: 11400000, guid: 047fdf2566593984394b8a6c7a365ff6, type: 2}
+  - {fileID: 11400000, guid: 056d6b057364e0742b06c9189fae1c0e, type: 2}
+  - {fileID: 11400000, guid: bfb41e1166d4583438fdba6bfae38dbf, type: 2}
+  - {fileID: 11400000, guid: f256b7b2c376ec94395a42a0ea049e65, type: 2}
   modelTransform: {fileID: 977909554706507655}
   currentState: 0
   orientation: 2
@@ -4967,7 +4969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c80eb9ea8c253c443a79834448947c12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.121
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c80eb9ea8c253c443a79834448947c12, type: 3}
       propertyPath: m_LocalPosition.z

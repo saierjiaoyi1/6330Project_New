@@ -22,5 +22,6 @@ public class SkillContext
 {
     public BaseCharacter caster;                // 释放技能的角色
     public List<SkillTargetInfo> targetInfos;     // 技能生效范围内所有格子的信息
+    public int diceValue;
     // 根据需要扩展其它上下文数据
 }

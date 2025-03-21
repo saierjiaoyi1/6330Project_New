@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aadc3174670958349bd40dceafb5a15c, type: 3}
   m_Name: Denfense+
   m_EditorClassIdentifier: 
-  buffName: +defense
-  buffDescription: "\u52A0\u89D2\u8272\u9632\u5FA1\u529B\uFF08\u5B9E\u9645\u4E0A\u662F\u8BA9\u6240\u6709\u6297\u6027+50\uFF09"
+  buffName: Defense Up
+  buffDescription: Increases unit deferense against all attacks for 2 turns.
   buffIcon: {fileID: 21300000, guid: c29d8727615cc8640a3a41e8e82fa542, type: 3}
   duration: 3
   buffType: 0
@@ -21,13 +21,13 @@ MonoBehaviour:
   modifications:
   - attributeType: 1
     modificationType: 0
-    value: 50
+    value: 75
   - attributeType: 2
     modificationType: 0
-    value: 50
+    value: 75
   - attributeType: 3
     modificationType: 0
-    value: 50
+    value: 75
   - attributeType: 4
     modificationType: 0
-    value: 50
+    value: 75

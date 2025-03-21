@@ -522,7 +522,7 @@ MonoBehaviour:
   x: 6
   y: 5
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -570,7 +570,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -851,7 +851,7 @@ MonoBehaviour:
   x: 2
   y: 19
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -899,7 +899,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1059,7 +1059,7 @@ PrefabInstance:
       objectReference: {fileID: 1298185653}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.01
+      value: 2.16
       objectReference: {fileID: 0}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1067,7 +1067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.55
+      value: 12.62
       objectReference: {fileID: 0}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1140,7 +1140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.12
+      value: 7.3599997
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1214,7 +1214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.463
+      value: 8.703
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1849,7 +1849,7 @@ MonoBehaviour:
   x: 1
   y: 2
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -1897,7 +1897,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2691,7 +2691,7 @@ MonoBehaviour:
   x: 1
   y: 8
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -2739,7 +2739,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3782,7 +3782,7 @@ MonoBehaviour:
   x: 6
   y: 14
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -3830,7 +3830,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6068,7 +6068,7 @@ MonoBehaviour:
   x: 9
   y: 17
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -6116,7 +6116,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6734,7 +6734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.781
+      value: 6.021
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6848,7 +6848,7 @@ MonoBehaviour:
   x: 9
   y: 18
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -6896,7 +6896,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7593,7 +7593,7 @@ PrefabInstance:
       objectReference: {fileID: 1298185653}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.31
+      value: 5.27
       objectReference: {fileID: 0}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7601,7 +7601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.67
+      value: 16.81
       objectReference: {fileID: 0}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7842,7 +7842,7 @@ MonoBehaviour:
   x: 0
   y: 13
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -7890,7 +7890,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9448,7 +9448,7 @@ MonoBehaviour:
   x: 1
   y: 1
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -9496,7 +9496,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9774,7 +9774,7 @@ MonoBehaviour:
   x: 6
   y: 12
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -9822,7 +9822,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9862,7 +9862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.76
+      value: 1.9999998
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11638,7 +11638,7 @@ MonoBehaviour:
   x: 6
   y: 7
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -11686,7 +11686,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12006,7 +12006,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 8f2fe6f39c7e8a44d87c8bbaaf87f414, type: 2}
     - target: {fileID: 8316690205616788374, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.435
+      value: 9.49
       objectReference: {fileID: 0}
     - target: {fileID: 8316690205616788374, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12014,7 +12014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8316690205616788374, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.512
+      value: 12.54
       objectReference: {fileID: 0}
     - target: {fileID: 8316690205616788374, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14397,7 +14397,7 @@ MonoBehaviour:
   x: 0
   y: 12
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -14445,7 +14445,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15498,7 +15498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.0300002
+      value: 2.13
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15506,7 +15506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.73
+      value: -2.56
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16197,7 +16197,7 @@ MonoBehaviour:
   x: 9
   y: 7
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -16245,7 +16245,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17308,7 +17308,7 @@ MonoBehaviour:
   x: 1
   y: 3
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -17356,7 +17356,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17820,7 +17820,7 @@ MonoBehaviour:
   x: 6
   y: 6
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -17868,7 +17868,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18076,7 +18076,7 @@ MonoBehaviour:
   x: 1
   y: 4
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -18124,7 +18124,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20408,7 +20408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.0300002
+      value: 2.1300006
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20416,7 +20416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.26
+      value: 1.4300001
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20738,8 +20738,8 @@ Transform:
   m_GameObject: {fileID: 1316753026}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.3773, y: -6.72, z: 9.59833}
-  m_LocalScale: {x: 0.9173215, y: 1, z: 1}
+  m_LocalPosition: {x: -9.6099, y: -6.8758, z: 9.6868}
+  m_LocalScale: {x: 0.9497947, y: 1.0354, z: 1.0182434}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1568271408}
@@ -20912,8 +20912,8 @@ Transform:
   m_GameObject: {fileID: 1324018656}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.08, y: -6.72, z: 9.59833}
-  m_LocalScale: {x: 0.9173215, y: 1, z: 1}
+  m_LocalPosition: {x: -2.0546, y: -6.8758, z: 9.6868}
+  m_LocalScale: {x: 0.9497947, y: 1.0354, z: 1.0182434}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1563100175}
@@ -20976,7 +20976,7 @@ Transform:
   m_GameObject: {fileID: 1324632930}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21252,7 +21252,7 @@ MonoBehaviour:
   x: 1
   y: 5
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -21300,7 +21300,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22774,7 +22774,7 @@ MonoBehaviour:
   x: 6
   y: 10
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -22822,7 +22822,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24710,7 +24710,7 @@ MonoBehaviour:
   x: 4
   y: 4
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -24758,7 +24758,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24838,7 +24838,7 @@ MonoBehaviour:
   x: 0
   y: 11
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -24886,7 +24886,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25069,7 +25069,7 @@ MonoBehaviour:
   x: 1
   y: 19
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -25117,7 +25117,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25197,7 +25197,7 @@ MonoBehaviour:
   x: 6
   y: 11
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -25245,7 +25245,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25285,7 +25285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.423
+      value: 0.66299975
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25663,7 +25663,7 @@ MonoBehaviour:
   x: 9
   y: 19
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -25711,7 +25711,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25791,7 +25791,7 @@ MonoBehaviour:
   x: 5
   y: 15
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -25839,7 +25839,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25919,7 +25919,7 @@ MonoBehaviour:
   x: 0
   y: 19
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -25967,7 +25967,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -26135,7 +26135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.92
+      value: -0.68000025
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26677,7 +26677,7 @@ MonoBehaviour:
   x: 4
   y: 15
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -26725,7 +26725,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27145,7 +27145,7 @@ MonoBehaviour:
   x: 3
   y: 19
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -27193,7 +27193,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27233,7 +27233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.1009998
+      value: 3.3409996
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28055,7 +28055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.8
+      value: 10.04
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28836,7 +28836,7 @@ MonoBehaviour:
   x: 1
   y: 9
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -28884,7 +28884,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29939,7 +29939,7 @@ PrefabInstance:
       objectReference: {fileID: 1298185653}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.255
+      value: 7.41
       objectReference: {fileID: 0}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: m_LocalPosition.y
@@ -29947,7 +29947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.125
+      value: 6.25
       objectReference: {fileID: 0}
     - target: {fileID: 8029986603390042478, guid: 41ffe430b9ccd1044b65100d8c7c94de, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30184,7 +30184,7 @@ MonoBehaviour:
   x: 5
   y: 4
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -30232,7 +30232,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30520,7 +30520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.0300002
+      value: 2.1300006
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30528,7 +30528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.76
+      value: -0.5899999
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30602,7 +30602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.444
+      value: 4.6839995
       objectReference: {fileID: 0}
     - target: {fileID: 1434957262770333565, guid: 086d7e77ffcfd524ebd4966212064f30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30716,7 +30716,7 @@ MonoBehaviour:
   x: 0
   y: 10
   cellSize: 1.05
-  isPassable: 1
+  isPassable: 0
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -30764,7 +30764,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30988,7 +30988,7 @@ MonoBehaviour:
   x: 6
   y: 13
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -31036,7 +31036,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31372,7 +31372,7 @@ MonoBehaviour:
   x: 6
   y: 9
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -31420,7 +31420,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31500,7 +31500,7 @@ MonoBehaviour:
   x: 1
   y: 7
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -31548,7 +31548,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -33549,7 +33549,7 @@ MonoBehaviour:
   x: 6
   y: 8
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -33597,7 +33597,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34096,7 +34096,7 @@ MonoBehaviour:
   x: 1
   y: 6
   cellSize: 1.05
-  isPassable: 0
+  isPassable: 1
   cellState: 0
   parentMap: {fileID: 1324632931}
   occupant: {fileID: 0}
@@ -34144,7 +34144,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17cd8519151f8f741a37fb4c236463bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

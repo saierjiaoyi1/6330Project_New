@@ -48,8 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: "\u602A\u7269\u54C7\u54C7"
-  health: 8
-  currentHealth: 8
+  health: 17
+  currentHealth: 17
   attack: 3
   baseAttack: 0
   movementRange: 5
@@ -59,12 +59,13 @@ MonoBehaviour:
   baseFireResistance: 0
   iceResistance: 0
   baseIceResistance: 0
-  CutResistance: -50
+  CutResistance: 0
   baseCutResistance: 0
   BluntResistance: 50
   baseBluntResistance: 0
   team: 1
-  skillList: []
+  skillList:
+  - {fileID: 11400000, guid: 7602dee8ce3e08d4ebe422aa9caceadb, type: 2}
   modelTransform: {fileID: 0}
   currentState: 0
   orientation: 2

@@ -64,7 +64,10 @@ MonoBehaviour:
   BluntResistance: 0
   baseBluntResistance: 0
   team: 0
-  skillList: []
+  skillList:
+  - {fileID: 11400000, guid: 7739c22802b9fb047a46a2344a40eec4, type: 2}
+  - {fileID: 11400000, guid: 56e056aaeaff7f441ae59aa867f7b814, type: 2}
+  - {fileID: 11400000, guid: e26e9a87a9317f6468451a4a0bed807a, type: 2}
   modelTransform: {fileID: 3355979215019360391}
   currentState: 0
   orientation: 1

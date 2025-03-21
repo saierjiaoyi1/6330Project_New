@@ -54,7 +54,7 @@ public class SkillSO2 : ScriptableObject
         SkillContext context = new SkillContext();
         context.caster = caster;
         context.targetInfos = affectedTargets;
-        // 如果需要，也可以添加 context.diceValue = diceValue; 等
+        context.diceValue = diceValue;
 
         if (taskList != null)
         {

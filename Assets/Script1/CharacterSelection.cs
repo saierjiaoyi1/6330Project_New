@@ -28,7 +28,7 @@ public class CharacterSelection : MonoBehaviour
         {
             GetComponent<Outline>().enabled = false;
         }
-
+	canvas = GameObject.Find("Canvas")?.GetComponent<Canvas>();
     }
 
     // 当鼠标进入本物体碰撞器范围

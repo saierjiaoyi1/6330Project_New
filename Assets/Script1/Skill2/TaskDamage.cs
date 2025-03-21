@@ -13,17 +13,13 @@ public class TaskDamage : Task
     [LabelText("伤害类型")]
     public DamageType damageType;
 
-    [LabelText("固定伤害值")]
     public float fixedDamage = 10f;
 
-    [LabelText("攻击加成系数")]
     public float attackMultiplier = 1f;
 
     [EnumToggleButtons]
-    [LabelText("目标队伍")]
-    public Team targetTeam;
 
-    [LabelText("目标特征码")]
+    public Team targetTeam;
     public int targetFeatureCode;
 
     public override IEnumerator Execute(SkillContext context)
@@ -33,6 +29,11 @@ public class TaskDamage : Task
                   " 加成系数=" + attackMultiplier);
         // 计算总伤害：固定伤害 + (加成系数 * 角色攻击力)
         float totalDamage = fixedDamage + attackMultiplier * context.caster.attack;
+	if (context.diceValue == 12) totalDamage = totalDamage * 2.0f;
+        else if (context.diceValue <= 11 && context.diceValue >= 9) totalDamage = totalDamage * 1.5f;
+        else if (context.diceValue <= 8 && context.diceValue>= 3) totalDamage = totalDamage * 1.0f;
+        else totalDamage = totalDamage * 0.8f;
+
         // 遍历所有技能生效范围内的格子，检查特征码（目标队伍的判断可在此处补充）
         foreach (var target in context.targetInfos)
         {
