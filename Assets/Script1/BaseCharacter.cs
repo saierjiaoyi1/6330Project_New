@@ -102,6 +102,8 @@ public abstract class BaseCharacter : MonoBehaviour
         baseIceResistance = iceResistance;
         baseBluntResistance = BluntResistance;
         baseCutResistance = CutResistance;
+        //uiCanvas
+        uiCanvas = GameObject.Find("Canvas")?.GetComponent<Canvas>();
     }
 
     /// <summary>
@@ -163,7 +165,6 @@ public abstract class BaseCharacter : MonoBehaviour
         if (currentCell == null) return;
         GridMapManager gridMap = currentCell.parentMap;
         if (gridMap == null || gridMap.gridCells == null) return;
-        Debug.Log(gridMap);
         // 清除全图上之前的移动范围标记（也可以只清除上次标记的区域）
         for (int x = 0; x < gridMap.gridWidth; x++)
         {

@@ -7475,46 +7475,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerB
       objectReference: {fileID: 0}
-    - target: {fileID: 3822000403296095104, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
-      propertyPath: attack
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3822000403296095104, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
-      propertyPath: health
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3822000403296095104, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
-      propertyPath: uiCanvas
-      value: 
-      objectReference: {fileID: 1298185653}
-    - target: {fileID: 3822000403296095104, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
-      propertyPath: currentHealth
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3822000403296095104, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
-      propertyPath: iceResistance
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3822000403296095104, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
-      propertyPath: movementRange
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3822000403296095104, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
-      propertyPath: fireResistance
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3822000403296095104, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
-      propertyPath: skillList.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: d9268987bffffd84fac64c084266cb9e, type: 2}
-    - target: {fileID: 3822000403296095104, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
-      propertyPath: skillList.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 2f152c01c2ffd294fa9c0ee105faddae, type: 2}
-    - target: {fileID: 3822000403296095104, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
-      propertyPath: skillList.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f2fe6f39c7e8a44d87c8bbaaf87f414, type: 2}
     - target: {fileID: 8316690205616788374, guid: 6a5025a34bd520a4aab436670fd9fef9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.44
@@ -9244,7 +9204,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.35355338, y: 0.35355338, z: -0.1464466, w: 0.8535535}
-  m_LocalPosition: {x: -3.61, y: 18.59, z: -8.11}
+  m_LocalPosition: {x: -2.9, y: 18.59, z: -8.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

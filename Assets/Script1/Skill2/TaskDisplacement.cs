@@ -22,7 +22,7 @@ public class TaskDisplacement : Task
         {
             foreach (var target in context.targetInfos)
             {
-                if (target.featureCode == code && target.cell != null && !target.cell.occupant)
+                if (target.featureCode == code && target.cell != null && !target.cell.occupant && target.cell.isPassable)
                 {
                     targetCell = target.cell;
                     break;

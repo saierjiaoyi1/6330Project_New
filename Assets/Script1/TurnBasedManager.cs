@@ -71,6 +71,7 @@ public class TurnBasedManager : MonoBehaviour
             roundCounter++;
             Debug.Log("当前回合数：" + roundCounter);
         }
+        SkillUIManager.Instance.DisableSkillButtons();
         StartTurn();
     }
 

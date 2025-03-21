@@ -43,7 +43,7 @@ MonoBehaviour:
       data:
         damageType: 2
         fixedDamage: 10
-        attackMultiplier: 1
+        attackMultiplier: 0
         targetTeam: 1
         targetFeatureCode: 0
     - rid: 823883284997210115

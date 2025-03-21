@@ -66,4 +66,11 @@ public class SkillUIManager : MonoBehaviour
             sbc.tooltipPrefab = tooltipPrefab;
         }
     }
+    public void DisableSkillButtons()
+    {
+        foreach (Transform child in skillButtonContainer)
+        {
+            Destroy(child.gameObject);
+        }
+    }
 }

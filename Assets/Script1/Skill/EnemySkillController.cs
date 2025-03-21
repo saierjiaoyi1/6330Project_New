@@ -25,7 +25,7 @@ public class EnemySkillController : MonoBehaviour
     }
     public void EnemyStartAttack()
     {
-        enemy.EndTurn();
+        //enemy.EndTurn();
         // 启动 AI 选择技能
         StartCoroutine(SelectAndExecuteSkillByAI());
     }
@@ -33,7 +33,7 @@ public class EnemySkillController : MonoBehaviour
     IEnumerator SelectAndExecuteSkillByAI()
     {
         Debug.Log("敌人开始选技能");
-        yield return new WaitForSeconds(1f); // 延时1秒后执行
+        
 
         // 选用技能列表中的第一个技能
         if (enemy.skillList.Count > 0)
@@ -52,17 +52,16 @@ public class EnemySkillController : MonoBehaviour
             if (grid.occupant != null && grid.occupant.GetComponent<PlayerCharacter>() != null)
             {
                 // 敌人执行技能（这里直接传入固定骰子值6，敌人不 roll 骰子）
-                selectedSkill.Execute(6, enemy, new List<SkillTargetInfo> { new SkillTargetInfo(grid, 0, Color.white) });
+                //selectedSkill.Execute(6, enemy, new List<SkillTargetInfo> { new SkillTargetInfo(grid, 0, Color.white) });
+                yield return new WaitForSeconds(0.3f); // 延时1秒后执行
+                grid.occupant.GetComponent<PlayerCharacter>().ReceiveDamage(3, DamageType.Blunt);
+                yield return new WaitForSeconds(0.5f);
                 ifAttack = true;
                 break;
             }
         }
-        if(ifAttack == false)
-        {
-            enemy.EndTurn();
-        }
+        enemy.EndTurn();
 
-        
 
         // 清除高亮效果
         ClearSkillRangeHighlight();
