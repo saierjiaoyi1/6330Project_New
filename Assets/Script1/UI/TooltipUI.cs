@@ -9,6 +9,7 @@ public class TooltipUI : MonoBehaviour
     public Image skillIconImage;
     public Text descriptionText;
     public Image rangeImage;
+    public Text cd;
 
     /// <summary>
     /// 设置 tooltip 显示的信息
@@ -18,7 +19,7 @@ public class TooltipUI : MonoBehaviour
     /// <param name="skillIcon">技能图标</param>
     /// <param name="description">技能描述</param>
     /// <param name="rangeSprite">技能范围图片</param>
-    public void SetSkillInfo(string skillName, string skillType, Sprite skillIcon, string description, Sprite rangeSprite)
+    public void SetSkillInfo(string skillName, string skillType, Sprite skillIcon, string description, Sprite rangeSprite, int skillCD)
     {
         if (skillNameText != null)
             skillNameText.text = skillName;
@@ -30,6 +31,11 @@ public class TooltipUI : MonoBehaviour
             descriptionText.text = description;
         if (rangeImage != null)
             rangeImage.sprite = rangeSprite;
+        if (cd != null)
+        {
+            //cd.text = "CD: " + skillCD + " Turns";
+            cd.text = "";
+        }
     }
 
 }

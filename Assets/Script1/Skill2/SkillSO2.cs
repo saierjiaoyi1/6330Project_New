@@ -31,12 +31,10 @@ public class SkillSO2 : ScriptableObject
     [Tooltip("例如伤害值或治疗值")]
     public int powerValue;
 
-    [Header("视觉配置（现在没用）")]
-    [Tooltip("技能生效范围高亮时的格子颜色")]
-    public Color effectCellColor = Color.red;
-
-    [Header("技能播动画类型")]
-    public int skillAnimType;
+    [Header("Cool down")]
+    [Tooltip("冷却")]
+    public int coolDown;
+    public int currentCoolDown;
 
     [Header("Task 配置")]
     [ShowInInspector, SerializeReference]

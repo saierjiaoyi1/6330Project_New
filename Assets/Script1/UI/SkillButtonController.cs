@@ -31,7 +31,7 @@ public class SkillButtonController : MonoBehaviour, IPointerEnterHandler, IPoint
             TooltipUI tooltipUI = tooltipInstance.GetComponent<TooltipUI>();
             if (tooltipUI != null)
             {
-                tooltipUI.SetSkillInfo(skill.skillName, skill.skillType, skill.skillIcon, skill.description, skill.range);
+                tooltipUI.SetSkillInfo(skill.skillName, skill.skillType, skill.skillIcon, skill.description, skill.range, skill.coolDown);
             }
 
             // 初始设置 tooltip 位置

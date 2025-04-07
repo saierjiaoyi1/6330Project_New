@@ -78,7 +78,7 @@ MonoBehaviour:
   healthBarPosY: 2.5
   animator: {fileID: 6880384279851383860}
   buffManager: {fileID: 0}
-  img: {fileID: 21300000, guid: 70f599384bde31c48b97c8eff54a6821, type: 3}
+  img: {fileID: 21300000, guid: f7b8a89a0b04d6e4590542a6c20ab79e, type: 3}
 --- !u!114 &6097675639273815113
 MonoBehaviour:
   m_ObjectHideFlags: 0
