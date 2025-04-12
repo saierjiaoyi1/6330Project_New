@@ -23,14 +23,14 @@ MonoBehaviour:
   areaData: {fileID: 11400000, guid: 8758fc4b9a5e68b448bd3bcafad36715, type: 2}
   targetType: 0
   powerValue: 0
-  effectCellColor: {r: 1, g: 0, b: 0, a: 1}
-  skillAnimType: 0
+  coolDown: 0
+  currentCoolDown: 0
   taskList:
   - rid: 823883284997210115
   - rid: 823883284997210117
   - rid: 823883284997210113
   - rid: 823883284997210114
-  - rid: 4788642750824448001
+  - rid: 5459039236609802240
   - rid: 823883284997210116
   references:
     version: 2
@@ -84,9 +84,9 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         targetGridFeatureCodes: 01000000
-    - rid: 4788642750824448001
+    - rid: 5459039236609802240
       type: {class: TaskApplyBuff, ns: , asm: Assembly-CSharp}
       data:
-        buff: {fileID: 11400000, guid: eb2b1b8cf0d2b91488e50081dd24edb8, type: 2}
-        target: 0
+        buff: {fileID: 11400000, guid: 6307c2e2145af5e4abee0c8634ff75d1, type: 2}
+        target: 1
         targetFeatureCode: 0
