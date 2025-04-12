@@ -22639,6 +22639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraController: {fileID: 963194229}
   turnOrder:
+  - {fileID: 1235161842}
   - {fileID: 1739299323}
   - {fileID: 1493075054}
   - {fileID: 222092665}
@@ -22655,6 +22656,7 @@ MonoBehaviour:
   - {fileID: 158795817}
   - {fileID: 395506721}
   - {fileID: 336022141}
+  - {fileID: 0}
   - {fileID: 0}
   currentTurnIndex: 0
   roundCounter: 1
@@ -23384,6 +23386,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1235161842 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 996429558530020632, guid: cffa2671bb83bac4192ddaaf861b5a65, type: 3}
+  m_PrefabInstance: {fileID: 762216648}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434d163daceadf24d977e7d45efbfcf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1236489481
 PrefabInstance:
   m_ObjectHideFlags: 0

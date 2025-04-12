@@ -42,9 +42,9 @@ MonoBehaviour:
     - rid: 823883284997210114
       type: {class: TaskDamage, ns: , asm: Assembly-CSharp}
       data:
-        damageType: 1
-        fixedDamage: 10
-        attackMultiplier: 1
+        damageType: 0
+        fixedDamage: 2
+        attackMultiplier: 0
         targetTeam: 1
         targetFeatureCode: 0
     - rid: 823883284997210115
