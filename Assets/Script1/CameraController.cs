@@ -146,4 +146,9 @@ public class CameraController : MonoBehaviour
         transform.position = pivot + offset;
         transform.LookAt(pivot);
     }
+
+    public void SetFllowing(bool b)
+    {
+        isFollowing = b;
+    }
 }

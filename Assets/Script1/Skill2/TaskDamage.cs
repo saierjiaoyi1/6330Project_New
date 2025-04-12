@@ -40,10 +40,14 @@ public class TaskDamage : Task
             Debug.Log(target.featureCode + " " + target.cell.occupant);
             if (target.cell.occupant != null && target.featureCode == targetFeatureCode)
             {
-                Debug.Log("对特征码 " + target.featureCode + " 目标造成 " + totalDamage +
-                          " 点 " + damageType + " 伤害");
-                // 可调用目标角色的受伤接口，例如：
-                target.cell.occupant.GetComponent<BaseCharacter>()?.ReceiveDamage(totalDamage, damageType);
+                if (target.cell.occupant.team == targetTeam)
+                {
+                    Debug.Log("对特征码 " + target.featureCode + " 目标造成 " + totalDamage +
+                                              " 点 " + damageType + " 伤害");
+                    // 可调用目标角色的受伤接口，例如：
+                    target.cell.occupant.GetComponent<BaseCharacter>()?.ReceiveDamage(totalDamage, damageType);
+                }
+                
             }
         }
         yield break;
