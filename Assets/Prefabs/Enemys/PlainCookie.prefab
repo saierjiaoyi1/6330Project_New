@@ -52,14 +52,14 @@ MonoBehaviour:
   currentHealth: 13
   attack: 3
   baseAttack: 0
-  movementRange: 7
+  movementRange: 6
   baseMovementRange: 0
   moveSpeed: 5
   fireResistance: 0
   baseFireResistance: 0
   iceResistance: 0
   baseIceResistance: 0
-  CutResistance: 60
+  CutResistance: 50
   baseCutResistance: 0
   BluntResistance: 0
   baseBluntResistance: 0
