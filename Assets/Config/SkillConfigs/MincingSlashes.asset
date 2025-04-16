@@ -18,7 +18,7 @@ MonoBehaviour:
     cutting damage per tile in a 3x3 area.
   skillIcon: {fileID: 0}
   range: {fileID: 21300000, guid: c4c3b865528f3094b8c3420b6d0e87d3, type: 3}
-  mpConsume: 2
+  mpConsume: 3
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0

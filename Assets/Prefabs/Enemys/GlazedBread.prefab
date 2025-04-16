@@ -50,6 +50,8 @@ MonoBehaviour:
   Name: "\u602A\u7269\u54C7\u54C7"
   health: 17
   currentHealth: 17
+  mp: 5
+  currentMP: 5
   attack: 3
   baseAttack: 0
   movementRange: 5
@@ -115,6 +117,18 @@ PrefabInstance:
     - target: {fileID: 88031260351172388, guid: c3fe9e149d0728442b1c97a5b3c01e1a, type: 3}
       propertyPath: m_Name
       value: Bread, Glazed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131129469408351596, guid: c3fe9e149d0728442b1c97a5b3c01e1a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.62877
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131129469408351596, guid: c3fe9e149d0728442b1c97a5b3c01e1a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.62877
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131129469408351596, guid: c3fe9e149d0728442b1c97a5b3c01e1a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.62877
       objectReference: {fileID: 0}
     - target: {fileID: 1131129469408351596, guid: c3fe9e149d0728442b1c97a5b3c01e1a, type: 3}
       propertyPath: m_LocalPosition.x

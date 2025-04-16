@@ -62,5 +62,5 @@ MonoBehaviour:
         damageType: 0
         fixedDamage: 5
         attackMultiplier: 0
-        targetTeam: 0
+        targetTeam: 1
         targetFeatureCode: 0

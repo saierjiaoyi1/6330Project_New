@@ -17,7 +17,7 @@ MonoBehaviour:
   description: Deal 5 units of fire damage per tile in a small area.
   skillIcon: {fileID: 0}
   range: {fileID: 21300000, guid: dca2cd9f5a31ab747bd18ae8425d318a, type: 3}
-  mpConsume: 1
+  mpConsume: 2
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0

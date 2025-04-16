@@ -18,7 +18,7 @@ MonoBehaviour:
     of cutting damage.
   skillIcon: {fileID: 0}
   range: {fileID: 21300000, guid: c643eeea3a39afe47a5456d0dd69e76f, type: 3}
-  mpConsume: 0
+  mpConsume: 1
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0

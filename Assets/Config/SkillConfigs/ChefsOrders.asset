@@ -18,7 +18,7 @@ MonoBehaviour:
     dealing 1 point of blunt damage to all enemies within 4 tiles attack the character. "
   skillIcon: {fileID: 0}
   range: {fileID: 21300000, guid: af6f99f4773da234da23b768a201e012, type: 3}
-  mpConsume: 3
+  mpConsume: 4
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0

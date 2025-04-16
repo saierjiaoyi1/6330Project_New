@@ -18,7 +18,7 @@ MonoBehaviour:
     per tile in a 3x1 area in the chosen direction.
   skillIcon: {fileID: 0}
   range: {fileID: 21300000, guid: 5a16a4c21d175f14d923c66ce772f1e8, type: 3}
-  mpConsume: 2
+  mpConsume: 3
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0

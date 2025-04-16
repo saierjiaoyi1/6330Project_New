@@ -50,6 +50,8 @@ MonoBehaviour:
   Name: "\u602A\u7269\u554A\u554A"
   health: 13
   currentHealth: 13
+  mp: 5
+  currentMP: 5
   attack: 3
   baseAttack: 0
   movementRange: 6
@@ -112,6 +114,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 190180078920084919}
     m_Modifications:
+    - target: {fileID: 4404019695952513464, guid: 6af290d2f456d0b4ab310ef2b9ced903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.53154
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404019695952513464, guid: 6af290d2f456d0b4ab310ef2b9ced903, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.53154
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404019695952513464, guid: 6af290d2f456d0b4ab310ef2b9ced903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.53154
+      objectReference: {fileID: 0}
     - target: {fileID: 4404019695952513464, guid: 6af290d2f456d0b4ab310ef2b9ced903, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

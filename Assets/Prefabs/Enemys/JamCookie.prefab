@@ -119,6 +119,18 @@ PrefabInstance:
       value: Cookie, Jammed
       objectReference: {fileID: 0}
     - target: {fileID: 2472060878831436884, guid: c592a049e09838f4c9fcdd54c4c15034, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.51387
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472060878831436884, guid: c592a049e09838f4c9fcdd54c4c15034, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.51387
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472060878831436884, guid: c592a049e09838f4c9fcdd54c4c15034, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.51387
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472060878831436884, guid: c592a049e09838f4c9fcdd54c4c15034, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}

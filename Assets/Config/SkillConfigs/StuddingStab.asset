@@ -18,7 +18,7 @@ MonoBehaviour:
     damage per tile in a 1x5 area in the chosen direction.
   skillIcon: {fileID: 0}
   range: {fileID: 21300000, guid: ff64610b4d5cfb640b5846b23cf72e02, type: 3}
-  mpConsume: 3
+  mpConsume: 4
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0
