@@ -48,11 +48,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: "\u602A\u7269\u54C7\u54C7"
-  health: 17
-  currentHealth: 17
+  health: 20
+  currentHealth: 20
   mp: 5
   currentMP: 5
-  attack: 3
+  attack: 2
   baseAttack: 0
   movementRange: 5
   baseMovementRange: 0
