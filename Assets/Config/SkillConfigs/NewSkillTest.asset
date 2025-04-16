@@ -17,6 +17,7 @@ MonoBehaviour:
   description: 11
   skillIcon: {fileID: 0}
   range: {fileID: 0}
+  mpConsume: 5
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0

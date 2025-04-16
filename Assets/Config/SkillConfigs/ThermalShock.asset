@@ -51,7 +51,7 @@ MonoBehaviour:
         fixedDamage: 5
         attackMultiplier: 0
         targetTeam: 1
-        targetFeatureCode: 0
+        targetFeatureCode: 1
     - rid: 7356052012787040259
       type: {class: TaskWait, ns: , asm: Assembly-CSharp}
       data:

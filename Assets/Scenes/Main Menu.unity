@@ -527,15 +527,21 @@ MonoBehaviour:
   - levelName: Level1
     description: 
     sceneName: Level_1
-  - levelName: Level2
+  - levelName: Level2-1
     description: 
     sceneName: Level_2
+  - levelName: Level2-2
+    description: 
+    sceneName: Level_2+1
   - levelName: Level3
     description: 
     sceneName: Level_3
-  - levelName: Level4
+  - levelName: Level4-1
     description: 
     sceneName: Level_4
+  - levelName: Level4-2
+    description: 
+    sceneName: Level_4+3
   - levelName: Level5
     description: 
     sceneName: Level_5
@@ -554,6 +560,12 @@ MonoBehaviour:
   - levelName: Level10
     description: 
     sceneName: Level_10
+  - levelName: Level11
+    description: 
+    sceneName: Level_11
+  - levelName: Level12
+    description: 
+    sceneName: Level_12
   SelectedLevelIndex: -1
   dice1: {fileID: 0}
   dice2: {fileID: 0}

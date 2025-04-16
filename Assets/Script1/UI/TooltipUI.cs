@@ -19,7 +19,7 @@ public class TooltipUI : MonoBehaviour
     /// <param name="skillIcon">技能图标</param>
     /// <param name="description">技能描述</param>
     /// <param name="rangeSprite">技能范围图片</param>
-    public void SetSkillInfo(string skillName, string skillType, Sprite skillIcon, string description, Sprite rangeSprite, int cmp)
+    public void SetSkillInfo(string skillName, string skillType, Sprite skillIcon, string description, Sprite rangeSprite, float cmp)
     {
         if (skillNameText != null)
             skillNameText.text = skillName;
