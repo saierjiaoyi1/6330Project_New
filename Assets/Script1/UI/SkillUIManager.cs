@@ -49,6 +49,12 @@ public class SkillUIManager : MonoBehaviour
                 buttonText.text = skill.skillName;
             }
 
+            //蓝不够
+            if(player.skillList[skillIndex].mpConsume > player.currentMP)
+            {
+                buttonObj.GetComponent<Button>().interactable = false;
+            }
+
             // 为按钮添加点击事件：调用 player.PlayerSkillController.SelectSkill(index)
             Button btn = buttonObj.GetComponent<Button>();
             if (btn != null)

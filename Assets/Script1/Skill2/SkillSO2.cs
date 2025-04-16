@@ -15,6 +15,7 @@ public class SkillSO2 : ScriptableObject
     public string description;
     public Sprite skillIcon;
     public Sprite range;
+    public float mpConsume;
 
     [Header("逻辑配置")]
     public SkillReleaseType releaseType;
@@ -53,6 +54,7 @@ public class SkillSO2 : ScriptableObject
         context.caster = caster;
         context.targetInfos = affectedTargets;
         context.diceValue = diceValue;
+        caster.currentMP -= mpConsume;
 
         if (taskList != null)
         {

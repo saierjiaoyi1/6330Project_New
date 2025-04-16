@@ -12,6 +12,9 @@ public class HealthBarUI : MonoBehaviour
     [Header("血条UI组件（Slider）")]
     public Slider healthSlider;
 
+    [Header("蓝条UI组件（Slider）")]
+    public Slider mpSlider;
+
     [Header("BuffUI")]
     public BuffUI buffUI;
 
@@ -58,6 +61,10 @@ public class HealthBarUI : MonoBehaviour
         if (healthSlider != null && baseChar != null)
         {
             healthSlider.value = baseChar.currentHealth / baseChar.health;
+        }
+        if (mpSlider != null && baseChar != null)
+        {
+            mpSlider.value = baseChar.currentMP / baseChar.mp;
         }
     }
 
