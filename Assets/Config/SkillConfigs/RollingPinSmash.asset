@@ -13,18 +13,20 @@ MonoBehaviour:
   m_Name: RollingPinSmash
   m_EditorClassIdentifier: 
   skillName: Rolling Pin Smash
-  skillType: Blunt
-  description: Execute a single target smash in one direction, dealing blunt damage.
+  skillType: Blunt, Single Target
+  description: Execute a single target smash in one direction, dealing 10 points
+    of blunt damage.
   skillIcon: {fileID: 0}
   range: {fileID: 21300000, guid: f9f388ce853c5cf4dbd5c40347d03486, type: 3}
+  mpConsume: 0
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0
   areaData: {fileID: 11400000, guid: ea2ef83496fb3734d9e6eccf805cf17c, type: 2}
   targetType: 0
   powerValue: 10
-  effectCellColor: {r: 1, g: 0, b: 0, a: 1}
-  skillAnimType: 0
+  coolDown: 0
+  currentCoolDown: 0
   taskList:
   - rid: 823883284997210115
   - rid: 823883284997210113

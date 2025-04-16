@@ -13,19 +13,20 @@ MonoBehaviour:
   m_Name: MincingSlashes
   m_EditorClassIdentifier: 
   skillName: Mincing Slashes
-  skillType: Cut
-  description: 'Execute a flurry of slashes in one direction, dealing cutting damage
-    in a 3x3 area in '
+  skillType: Cut, AoE
+  description: Execute a flurry of slashes in one direction, dealing 10 points of
+    cutting damage per tile in a 3x3 area.
   skillIcon: {fileID: 0}
   range: {fileID: 21300000, guid: c4c3b865528f3094b8c3420b6d0e87d3, type: 3}
+  mpConsume: 2
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0
   areaData: {fileID: 11400000, guid: 7658b4afd2611e84fae70ea04c25312f, type: 2}
   targetType: 0
   powerValue: 0
-  effectCellColor: {r: 1, g: 0, b: 0, a: 1}
-  skillAnimType: 0
+  coolDown: 0
+  currentCoolDown: 0
   taskList:
   - rid: 823883284997210115
   - rid: 823883284997210113

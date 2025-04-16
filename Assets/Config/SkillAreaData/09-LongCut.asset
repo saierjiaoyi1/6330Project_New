@@ -29,6 +29,3 @@ MonoBehaviour:
   - offset: {x: 0, y: 5}
     cellColor: {r: 1, g: 0.69803923, b: 0.23137255, a: 1}
     featureCode: 0
-  - offset: {x: 0, y: 6}
-    cellColor: {r: 0.87222177, g: 0.48584908, b: 1, a: 1}
-    featureCode: 1

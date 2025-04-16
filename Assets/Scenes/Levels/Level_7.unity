@@ -37547,6 +37547,7 @@ MonoBehaviour:
   cameraController: {fileID: 963194229}
   turnOrder:
   - {fileID: 959399760}
+  - {fileID: 4452159938119622798}
   - {fileID: 1177259912}
   - {fileID: 2063445072}
   - {fileID: 496794314}
@@ -63854,7 +63855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6208521099013834571, guid: cffa2671bb83bac4192ddaaf861b5a65, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.541
+      value: 11.63
       objectReference: {fileID: 0}
     - target: {fileID: 6208521099013834571, guid: cffa2671bb83bac4192ddaaf861b5a65, type: 3}
       propertyPath: m_LocalRotation.w
@@ -63889,6 +63890,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cffa2671bb83bac4192ddaaf861b5a65, type: 3}
+--- !u!114 &4452159938119622798 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 996429558530020632, guid: cffa2671bb83bac4192ddaaf861b5a65, type: 3}
+  m_PrefabInstance: {fileID: 4452159938119622797}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434d163daceadf24d977e7d45efbfcf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5696693646765837104
 GameObject:
   m_ObjectHideFlags: 0

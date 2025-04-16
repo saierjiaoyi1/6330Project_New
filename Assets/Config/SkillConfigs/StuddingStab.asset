@@ -13,19 +13,20 @@ MonoBehaviour:
   m_Name: StuddingStab
   m_EditorClassIdentifier: 
   skillName: Studding Stab
-  skillType: Cut
-  description: Stab whiel moving forward in one direction, dealing cutting damage
-    in a 1x5 area in the chosen direction.
+  skillType: Cut, AoE, Traversal
+  description: Stab while moving forward in one direction, dealing 13 points of cutting
+    damage per tile in a 1x5 area in the chosen direction.
   skillIcon: {fileID: 0}
   range: {fileID: 21300000, guid: ff64610b4d5cfb640b5846b23cf72e02, type: 3}
+  mpConsume: 3
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0
   areaData: {fileID: 11400000, guid: 8758fc4b9a5e68b448bd3bcafad36715, type: 2}
   targetType: 0
   powerValue: 0
-  effectCellColor: {r: 1, g: 0, b: 0, a: 1}
-  skillAnimType: 0
+  coolDown: 0
+  currentCoolDown: 0
   taskList:
   - rid: 823883284997210115
   - rid: 823883284997210117

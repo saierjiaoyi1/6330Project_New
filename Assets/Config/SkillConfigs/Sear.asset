@@ -10,48 +10,47 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0378bff8de4b9147915421450143c10, type: 3}
-  m_Name: BatonnetChop
+  m_Name: Sear
   m_EditorClassIdentifier: 
-  skillName: Batonnet Chop
-  skillType: Cut, Single Target
-  description: Perform a chop on a single target in one direction, dealing 15 points
-    of cutting damage.
+  skillName: Sear
+  skillType: Fire, AoE
+  description: Deal 5 units of fire damage per tile in a small area.
   skillIcon: {fileID: 0}
-  range: {fileID: 21300000, guid: c643eeea3a39afe47a5456d0dd69e76f, type: 3}
-  mpConsume: 0
+  range: {fileID: 21300000, guid: dca2cd9f5a31ab747bd18ae8425d318a, type: 3}
+  mpConsume: 1
   releaseType: 0
   releaseRange: 0
   effectAreaType: 0
-  areaData: {fileID: 11400000, guid: 1e13319de181bb3478b4ee43d682ba8f, type: 2}
+  areaData: {fileID: 11400000, guid: 81ce9e1f141a181439a1b38942cb3d02, type: 2}
   targetType: 0
   powerValue: 0
   coolDown: 0
   currentCoolDown: 0
   taskList:
-  - rid: 823883284997210115
-  - rid: 823883284997210113
-  - rid: 823883284997210114
-  - rid: 823883284997210116
+  - rid: 7356052012787040256
+  - rid: 7356052012787040257
+  - rid: 7356052012787040258
+  - rid: 7356052012787040259
   references:
     version: 2
     RefIds:
-    - rid: 823883284997210113
+    - rid: 7356052012787040256
+      type: {class: TaskPlayAnim, ns: , asm: Assembly-CSharp}
+      data:
+        triggerName: MagicAttack02
+    - rid: 7356052012787040257
       type: {class: TaskWait, ns: , asm: Assembly-CSharp}
       data:
-        duration: 0.5
-    - rid: 823883284997210114
+        duration: 2
+    - rid: 7356052012787040258
       type: {class: TaskDamage, ns: , asm: Assembly-CSharp}
       data:
-        damageType: 2
-        fixedDamage: 15
+        damageType: 0
+        fixedDamage: 5
         attackMultiplier: 0
         targetTeam: 1
         targetFeatureCode: 0
-    - rid: 823883284997210115
-      type: {class: TaskPlayAnim, ns: , asm: Assembly-CSharp}
-      data:
-        triggerName: LightAttack
-    - rid: 823883284997210116
+    - rid: 7356052012787040259
       type: {class: TaskWait, ns: , asm: Assembly-CSharp}
       data:
         duration: 0.5

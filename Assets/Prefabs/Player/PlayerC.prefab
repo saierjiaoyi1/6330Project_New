@@ -50,6 +50,8 @@ MonoBehaviour:
   Name: "\u7B2C\u4E00"
   health: 35
   currentHealth: 35
+  mp: 5
+  currentMP: 5
   attack: 5
   baseAttack: 0
   movementRange: 5
@@ -64,7 +66,10 @@ MonoBehaviour:
   BluntResistance: 0
   baseBluntResistance: 0
   team: 0
-  skillList: []
+  skillList:
+  - {fileID: 11400000, guid: 198fe7c0c4acfdc4eac7bb4db79e5261, type: 2}
+  - {fileID: 11400000, guid: 60bf2bc6f2dd37a449fc8caadcf481e9, type: 2}
+  - {fileID: 11400000, guid: dc6a4cf5ce3de5c4a9b3c10583d25153, type: 2}
   modelTransform: {fileID: 0}
   currentState: 0
   orientation: 2
