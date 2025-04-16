@@ -53,6 +53,7 @@ public class TurnBasedManager : MonoBehaviour
         BaseCharacter currentCharacter = turnOrder[currentTurnIndex];
         cameraController.target = currentCharacter.gameObject.transform.GetChild(0);
         Debug.Log("当前回合角色：" + currentCharacter.Name);
+        currentCharacter.AdjMP(2);
         cameraController.SetFllowing(true);
         currentCharacter.OnTurnStart();
     }

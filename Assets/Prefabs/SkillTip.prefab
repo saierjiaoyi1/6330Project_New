@@ -184,8 +184,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 184.916, y: -234.70473}
-  m_SizeDelta: {x: 308.17, y: 182.55011}
+  m_AnchoredPosition: {x: 184.91602, y: -235.02315}
+  m_SizeDelta: {x: 308.17, y: 200.1808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &760918257959657317
 CanvasRenderer:
@@ -217,7 +217,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4a8e362aa9c977047a81dde879665e8f, type: 3}
-    m_FontSize: 26
+    m_FontSize: 19
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -487,7 +487,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'CD: 2 Turns'
+  m_Text: 2 MP
 --- !u!1 &8830753947316178669
 GameObject:
   m_ObjectHideFlags: 0

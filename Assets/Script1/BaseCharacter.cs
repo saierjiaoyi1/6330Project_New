@@ -12,6 +12,9 @@ public abstract class BaseCharacter : MonoBehaviour
     [Tooltip("血量")]
     public float health = 100;
     public float currentHealth = 100;
+    [Tooltip("蓝")]
+    public float mp = 5;
+    public float currentMP = 5;
     [Tooltip("攻击力")]
     public float attack = 10;
     [ReadOnly]
@@ -420,6 +423,16 @@ public abstract class BaseCharacter : MonoBehaviour
         if (AnimValue == 5)
         {
             animator.SetTrigger("attackMagicTrigger02");//长时间施法
+        }
+    }
+
+    public void AdjMP(float n)
+    {
+        currentMP += n;
+        if (currentMP > mp) currentMP = mp;
+        if (currentMP < 0)
+        {
+            currentMP = 0;
         }
     }
 }
